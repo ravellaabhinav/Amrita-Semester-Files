@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-04 09:50:59 AM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMS0wNDsgMDk6NDQ6MTYgQU07IDI5MTg="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMS0wNDsgMDk6NTA6NTkgQU07IDI5MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter two integers&quot;"/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <if expression="x&gt;=y">
+                <then>
+                    <output expression="&quot;GCD of &quot;&amp;x&amp;&quot; and &quot;&amp;y&amp;&quot; : &quot;&amp;RecGCD(x,y)"/>
+                </then>
+                <else>
+                    <output expression="&quot;GCD of &quot;&amp;x&amp;&quot; and &quot;&amp;y&amp;&quot; : &quot;&amp;RecGCD(y,x)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="RecGCD" type="Integer" variable="g">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+            <parameter name="B" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="g" type="Integer" array="False" size=""/>
+            <assign variable="g" expression="0"/>
+            <if expression="b==0">
+                <then>
+                    <assign variable="g" expression="a"/>
+                </then>
+                <else>
+                    <assign variable="g" expression="RecGCD(b,a%b)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

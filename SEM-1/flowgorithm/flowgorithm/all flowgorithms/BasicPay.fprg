@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-27 02:14:16 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yNzswMjowMDoxMSBQTTszMDY3"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yNzswMjoxNDoxNiBQTTsxOzMxODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Basicpay" type="Real" array="False" size=""/>
+            <declare name="DA" type="Real" array="False" size=""/>
+            <declare name="HRA" type="Real" array="False" size=""/>
+            <declare name="GROSS" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter basic pay of an employee&quot;" newline="True"/>
+            <input variable="BasicPay"/>
+            <assign variable="DA" expression="(40*BasicPay)/100"/>
+            <assign variable="HRA" expression="(10*BasicPay)/100"/>
+            <assign variable="GROSS" expression="BasicPay+DA+HRA"/>
+            <output expression="&quot;DEAR ALLOWANCE = &quot; &amp; DA" newline="True"/>
+            <output expression="&quot;HOUSE RENT ALLOWANCE = &quot; &amp; HRA" newline="True"/>
+            <output expression="&quot;GROSS = &quot; &amp; GROSS" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

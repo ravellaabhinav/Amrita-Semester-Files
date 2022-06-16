@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-07 08:38:42 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMTAtMDc7MTI6MzA6NTIg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MTk5"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMTAtMDc7MDg6Mzg6NDIg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, k, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;no of val&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <output expression="&quot;place&quot;" newline="True"/>
+            <input variable="k"/>
+            <for variable="i" start="k" end="n-2" direction="inc" step="1">
+                <assign variable="a[i]" expression="a[i+1]"/>
+            </for>
+            <for variable="i" start="0" end="n-2" direction="inc" step="1">
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

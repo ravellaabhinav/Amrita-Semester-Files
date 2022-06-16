@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-30 09:20:16 AM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMC0zMDsgMDk6MTU6NDQgQU07IDI5MTU="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMC0zMDsgMDk6MjA6MTYgQU07IDI5MTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Number, Reverse" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter an integer&quot;"/>
+            <input variable="Number"/>
+            <assign variable="Reverse" expression="ReverseNumber(Number)"/>
+            <output expression="&quot;Reversed number is &quot;&amp;Reverse"/>
+        </body>
+    </function>
+    <function name="ReverseNumber" type="Integer" variable="Reverse">
+        <parameters>
+            <parameter name="ActualNumber" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Reverse, Rem" type="Integer" array="False" size=""/>
+            <assign variable="Reverse" expression="0"/>
+            <while expression="ActualNumber!=0">
+                <assign variable="Rem" expression="ActualNumber mod 10"/>
+                <assign variable="Reverse" expression="(Reverse*10)+Rem"/>
+                <assign variable="ActualNumber" expression="ActualNumber/10"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

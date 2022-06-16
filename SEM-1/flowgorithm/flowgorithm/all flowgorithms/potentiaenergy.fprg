@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-18 04:33:33 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDc6NDY6NTkgUE07IDI5NDY="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDg6MDg6MTUgUE07IDI5Mzc="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0xODswNDozMzozMyBQTTsxOzMxODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Calculate the potential energy, after inputting mass and height"/>
+            <declare name="MASS" type="Integer" array="False" size=""/>
+            <declare name="HEIGHT" type="Integer" array="False" size=""/>
+            <declare name="g" type="Real" array="False" size=""/>
+            <declare name="potentialenergy" type="Integer" array="False" size=""/>
+            <declare name="hi" type="String" array="False" size=""/>
+            <declare name="yes" type="String" array="False" size=""/>
+            <declare name="ofcourse" type="String" array="False" size=""/>
+            <comment text="Declare required variables - mass,g,height and Energy"/>
+            <comment text="Assign 9.8 for g"/>
+            <output expression="&quot;Hi there!!!&quot;" newline="True"/>
+            <input variable="hi"/>
+            <output expression="&quot;So you want to know your potentialenergy&quot;" newline="True"/>
+            <input variable="yes"/>
+            <output expression="&quot;do u really want to know??&quot;" newline="True"/>
+            <input variable="ofcourse"/>
+            <output expression="&quot;Enter the value of MASS&quot;" newline="True"/>
+            <input variable="MASS"/>
+            <output expression="&quot;Enter the value of HEIGHT&quot;" newline="True"/>
+            <input variable="HEIGHT"/>
+            <assign variable="g" expression="9.8"/>
+            <comment text="Input mass and height values by adding appropriate blocks"/>
+            <assign variable="potentialenergy" expression="MASS*g*HEIGHT"/>
+            <comment text="Calculate Energy as mass*g*height"/>
+            <comment text="Print the energy value"/>
+            <output expression="&quot;the potential energy =&quot; &amp; potentialenergy" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

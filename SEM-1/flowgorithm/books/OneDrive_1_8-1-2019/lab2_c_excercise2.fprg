@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Example Triangle"/>
+        <attribute name="authors" value="Devin Cook"/>
+        <attribute name="about" value="This is very basic program that inputs the base and height of a right-angled triangle."/>
+        <attribute name="saved" value="2019-07-19 03:27:59 PM"/>
+        <attribute name="created" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAzOjI1OjE2IFBNOzE5NzA="/>
+        <attribute name="edited" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAzOjI3OjU5IFBNOzE7MjA4Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base" type="Real" array="False" size=""/>
+            <declare name="height" type="Real" array="False" size=""/>
+            <declare name="answer" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter the base of the triangle&quot;" newline="True"/>
+            <comment text="Insert an &quot;INPUT&quot; block here for reading the base of the triangle"/>
+            <output expression="&quot;Please enter the height of the triangle&quot;" newline="True"/>
+            <comment text="Insert an &quot;INPUT&quot; block here for reading the height of the triangle"/>
+            <comment text="Insert an &quot;ASSIGNMENT&quot; block here and give the follwing expression&#13;&#10;answer=1/2*(base*height)"/>
+            <output expression="&quot;The area of the triangle is &quot; &amp; answer" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

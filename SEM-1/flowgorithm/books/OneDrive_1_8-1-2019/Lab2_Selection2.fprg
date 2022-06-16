@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-07-23 02:56:21 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wNy0yMzsgMDI6Mzc6MDIgUE07IDI5Mjk="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wNy0yMzsgMDI6NTY6MjEgUE07IDI5MzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Purpose of this example is to calculate Body Mass Index of a person by entering Height in centimetres and Weight in Kilogram. Then classify us Underweight, Normal and Overweight"/>
+            <declare name="Weight" type="Real" array="False" size=""/>
+            <declare name="Height" type="Real" array="False" size=""/>
+            <declare name="BMI" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your Height (in cm)&quot;"/>
+            <input variable="Height"/>
+            <output expression="&quot;Enter your Weight (in Kg)&quot;"/>
+            <input variable="Weight"/>
+            <assign variable="BMI" expression="Weight/(Height*Height)*10000"/>
+            <if expression="BMI&lt;18.5">
+                <then>
+                    <output expression="&quot;The person is Underweight&quot;"/>
+                </then>
+                <else>
+                    <if expression="BMI&gt;= 18.5 &amp;&amp; BMI &lt;=24.9">
+                        <then>
+                            <output expression="&quot;The person is Normal&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;The person is Overweight&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-18 11:32:34 &#2346;&#2370;&#2352;&#2381;&#2357;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTg7MTE6MjA6NTkg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzI0MDEz"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTg7MTE6MzI6MzQg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzE7MjQxMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, e, o, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter no values using&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="o" expression="0"/>
+            <assign variable="e" expression="0"/>
+            <output expression="&quot;enter values&quot;" newline="True"/>
+            <while expression="i&lt;n">
+                <input variable="a[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="a[i]%2==0">
+                    <then>
+                        <assign variable="e" expression="e+a[i]"/>
+                    </then>
+                    <else>
+                        <assign variable="o" expression="o+a[i]"/>
+                    </else>
+                </if>
+            </for>
+            <if expression="e==0">
+                <then>
+                    <output expression="&quot;there are no even values in given&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="o==0">
+                <then>
+                    <output expression="&quot;there are no odd values in given&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;sum of odd = &quot;&amp;o" newline="True"/>
+            <output expression="&quot;sum of even = &quot;&amp;e" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

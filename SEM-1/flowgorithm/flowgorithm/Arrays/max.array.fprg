@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RAVELLA ABHINAV"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-12 04:04:40 PM"/>
+        <attribute name="created" value="UkFWRUxMQSBBQkhJTkFWO0xBUFRPUC1WUEUwQ1VIRzsyMDE5LTA5LTEyOzAyOjUwOjMwIFBNOzM0MjE="/>
+        <attribute name="edited" value="UkFWRUxMQSBBQkhJTkFWO0xBUFRPUC1WUEUwQ1VIRzsyMDE5LTA5LTEyOzA0OjA0OjQwIFBNOzI7MzUzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="max, min, index" type="Integer" array="False" size=""/>
+            <declare name="anArray" type="Integer" array="True" size="5"/>
+            <assign variable="max" expression="0"/>
+            <assign variable="min" expression="11111"/>
+            <for variable="index" start="0" end="4" direction="inc" step="1">
+                <input variable="anArray[index]"/>
+            </for>
+            <for variable="index" start="0" end="4" direction="inc" step="1">
+                <output expression="anArray[index]" newline="True"/>
+            </for>
+            <for variable="index" start="0" end="4" direction="inc" step="1">
+                <if expression="anArray[index]&gt;max">
+                    <then>
+                        <assign variable="max" expression="anArray[index]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;max element is &quot;&amp;max" newline="True"/>
+            <for variable="index" start="0" end="4" direction="inc" step="1">
+                <if expression="anArray[index]&lt;min">
+                    <then>
+                        <assign variable="min" expression="anArray[index]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;min element is &quot;&amp;min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

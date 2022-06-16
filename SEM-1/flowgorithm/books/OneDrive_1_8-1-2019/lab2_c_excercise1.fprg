@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Area of a Circle"/>
+        <attribute name="authors" value="Devin Cook"/>
+        <attribute name="about" value="This example inputs the radius of a circle and outputs the area."/>
+        <attribute name="saved" value="2019-07-19 03:25:08 PM"/>
+        <attribute name="created" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAzOjE1OjQ0IFBNOzE5NzA="/>
+        <attribute name="edited" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAzOjI1OjA4IFBNOzI7MjA4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="radius" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the radius of a circle&quot;" newline="True"/>
+            <input variable="radius"/>
+            <comment text="Insert an &quot;Assignment&quot; block HERE and give the following expression&#13;&#10;area=3.14*radius^2"/>
+            <output expression="&quot;The area is &quot; &amp; area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

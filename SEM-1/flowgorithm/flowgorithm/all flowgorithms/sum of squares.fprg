@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-10 04:03:17 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wMTsgMTE6MDE6MTEgQU07IDI5MDI="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wMTsgMTE6MjY6NDIgQU07IDI5MTM="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0xMDswNDowMzoxNyBQTTsxOzMxNzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Flowgorith to print the sum of squares of numbers from 1 to N using repetition"/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="Sum" type="Integer" array="False" size=""/>
+            <assign variable="Sum" expression="0"/>
+            <output expression="&quot;Enter N&quot;" newline="True"/>
+            <input variable="N"/>
+            <comment text="Insert appropriate block to read value of N from user"/>
+            <output expression="&quot;Adding square of numbers from 1 to &quot; &amp; N" newline="True"/>
+            <comment text="Change the program to find the sum of squares of numbers from 1 to N"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <assign variable="Sum" expression="Sum+i^2"/>
+            </for>
+            <output expression="&quot;Sum : &quot;&amp; Sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int i,j,n,k,l;
+    scanf("%d",&n);
+for(i=1;i<=n;i=i+1) {
+    for (j=1;j<=n;j=j+1) {
+        if ((n*n)==(i*i)+(j*j) && i<j) {
+          printf("%d^2 can be expressed as %d^2+%d^2\n",n,i,j);
+         k=i;
+         l=j;
+        } 
+        
+    }
+}
+if (n*n==k*k+l*l) {
+    printf("");
+}
+else {
+    printf("cannot be expressed");
+}
+return 0;
+}

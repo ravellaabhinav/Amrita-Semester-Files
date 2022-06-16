@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-09 03:15:50 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0wOTswMzowOTowOCBQTTszMDgz"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0wOTswMzoxNTo1MCBQTTsxOzMxODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number1" type="Integer" array="False" size=""/>
+            <declare name="number2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value for number1&quot;" newline="True"/>
+            <input variable="number1"/>
+            <output expression="&quot;Enter tht value for number2&quot;" newline="True"/>
+            <input variable="number2"/>
+            <if expression="number1&gt;number2">
+                <then>
+                    <output expression="number1 &amp; &quot; is bigger than &quot; &amp; number2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="number2&gt;number1">
+                        <then>
+                            <output expression="number2 &amp; &quot; is bigger than &quot; &amp; number1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="number1 &amp; &quot; is equal to&quot; &amp; number2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

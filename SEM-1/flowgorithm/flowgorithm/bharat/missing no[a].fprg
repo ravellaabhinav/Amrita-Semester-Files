@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-08 01:21:32 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMTAtMDg7MTA6NTM6NTMg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzI0MDAz"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMTAtMDg7MDE6MjE6MzIg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzM7MTkzMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, p, s, t, m, j, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;fir&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <output expression="&quot;sec&quot;" newline="True"/>
+            <input variable="m"/>
+            <declare name="b" type="Integer" array="True" size="m"/>
+            <for variable="j" start="0" end="m-1" direction="inc" step="1">
+                <input variable="b[j]"/>
+            </for>
+            <assign variable="c" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="j" expression="0"/>
+            <while expression="i&lt;n&amp;&amp;j&lt;m">
+                <if expression="a[i]==b[j]">
+                    <then>
+                        <assign variable="i" expression="i+1"/>
+                        <assign variable="j" expression="j+1"/>
+                    </then>
+                    <else>
+                        <output expression="a[i]" newline="True"/>
+                        <assign variable="c" expression="c+1"/>
+                        <assign variable="i" expression="i+1"/>
+                    </else>
+                </if>
+            </while>
+            <if expression="i&lt;n">
+                <then>
+                    <for variable="i" start="i" end="n-1" direction="inc" step="1">
+                        <output expression="a[i]" newline="True"/>
+                        <assign variable="c" expression="c+1"/>
+                    </for>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;cou=  &quot;&amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

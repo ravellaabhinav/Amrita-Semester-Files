@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-08 02:49:28 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0wODswMjozODo1MyBQTTszMDgz"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0wODswMjo0OToyOCBQTTszOzMxOTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="temp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter first number&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter second number&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="temp" expression="a"/>
+            <assign variable="a" expression="b"/>
+            <assign variable="b" expression="temp"/>
+            <output expression="&quot;Now first number is &quot; &amp; a" newline="True"/>
+            <output expression="&quot;Now second number is &quot; &amp; b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

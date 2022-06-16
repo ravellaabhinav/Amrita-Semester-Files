@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-04 09:28:33 AM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMS0wNDsgMDk6MjA6NTUgQU07IDI5MTU="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMS0wNDsgMDk6Mjg6MzMgQU07IDI5MTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter N&quot;"/>
+            <input variable="Num"/>
+            <output expression="RecNaturalSum(Num)"/>
+        </body>
+    </function>
+    <function name="RecNaturalSum" type="Integer" variable="S">
+        <parameters>
+            <parameter name="N" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="S" type="Integer" array="False" size=""/>
+            <assign variable="S" expression="0"/>
+            <if expression="N==0">
+                <then>
+                    <assign variable="S" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="S" expression="S+N+RecNaturalSum(N-1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

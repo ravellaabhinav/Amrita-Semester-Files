@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+int totals,seconds,minutes,hours,temp,a,b;
+printf("Enter number of seconds");
+scanf("%d\n",&totals);
+temp=(totals)/60;
+hours=(temp)/60;
+minutes=(temp)%60;
+seconds=(totals)%60;
+printf("%d seconds is equal to %d hours, %d minutes, %d seconds",totals,hours,minutes,seconds);
+return 0;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-18 11:20:56 &#2346;&#2370;&#2352;&#2381;&#2357;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTg7MTE6MTU6MTAg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzI0MDA0"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTg7MTE6MjA6NTYg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzE7MjQxMTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, m, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;no of values using&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="m" expression="1"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;enter values&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="m" expression="m*a[i]"/>
+            </for>
+            <output expression="m" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

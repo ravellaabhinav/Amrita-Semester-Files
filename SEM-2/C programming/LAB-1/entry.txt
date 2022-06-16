@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+int m,p,c;
+scanf("%d %d %d",&m,&p,&c);
+if (m>=60 && p>=50 && c>=40 && (m+p+c)>=200 && (m+p)>=150) {
+    printf("Entry");
+}
+else {
+    printf("No entry");
+}
+return 0;
+}

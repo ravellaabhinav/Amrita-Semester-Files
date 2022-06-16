@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-14 10:37:18 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTQ7MTA6MjA6MDcg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjAx"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTQ7MTA6Mzc6MTgg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, k, p" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="p" expression="1"/>
+            <while expression="p&lt;=n">
+                <for variable="i" start="1" end="10" direction="inc" step="1">
+                    <assign variable="k" expression="p*i"/>
+                    <output expression="p&amp;&quot;x&quot;&amp;i&amp;&quot;=&quot;&amp;k" newline="True"/>
+                </for>
+                <assign variable="p" expression="p+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

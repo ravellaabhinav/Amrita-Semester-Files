@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-19 03:34:30 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTk7MDM6MTQ6MjYg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjEy"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTk7MDM6MzQ6MzAg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, g, avg, mpg, s" type="Real" array="False" size=""/>
+            <declare name="i, c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i!=-1">
+                <output expression="&quot;enter your miles driven&quot;" newline="True"/>
+                <input variable="m"/>
+                <output expression="&quot;enter your gallons used&quot;" newline="True"/>
+                <input variable="g"/>
+                <assign variable="mpg" expression="m/g"/>
+                <output expression="&quot;miles per gallon is  &quot;&amp;mpg" newline="True"/>
+                <assign variable="s" expression="s+mpg"/>
+                <assign variable="c" expression="c+1"/>
+                <output expression="&quot;press i=1 to move furthur  or  i=-1 for end&quot;" newline="True"/>
+                <input variable="i"/>
+            </while>
+            <assign variable="avg" expression="s/c"/>
+            <output expression="&quot;average miles per gallons is   &quot;&amp;avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

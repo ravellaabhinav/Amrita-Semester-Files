@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-10 09:34:41 AM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wNy0yMzsgMDI6Mzc6MDIgUE07IDI5Mjk="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wNy0yMzsgMDM6MDA6NDQgUE07IDI5MjY="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0xMDswOTozNDo0MSBBTTsxOzMxNjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Purpose of this example is to calculate Body Mass Index of a person by entering Height in centimetres and Weight in Kilogram. Then classify us Underweight, Normal and Overweight"/>
+            <declare name="Weight" type="Real" array="False" size=""/>
+            <declare name="Height" type="Real" array="False" size=""/>
+            <declare name="BMI" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your Height (in cm)&quot;" newline="True"/>
+            <input variable="Height"/>
+            <output expression="&quot;Enter your Weight (in Kg)&quot;" newline="True"/>
+            <input variable="Weight"/>
+            <assign variable="BMI" expression="Weight/(Height*Height)*10000"/>
+            <comment text="Print the BMI here"/>
+            <if expression="BMI&lt;18.5">
+                <then>
+                    <output expression="&quot;The person is Underweight&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="BMI&gt;= 18.5 &amp;&amp; BMI &lt;25">
+                        <then>
+                            <output expression="&quot;The person is Normal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="BMI&gt;=25&amp;&amp;BMI&lt;30">
+                                <then>
+                                    <output expression="&quot;the person is overweight&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;the person is obese&quot;" newline="True"/>
+                                </else>
+                            </if>
+                            <comment text="Modify the Overweight category into two by adding appropriate selection box and output message boxes&#13;&#10;&#13;&#10;1. BM1 greter than or equalto 25 to  BM1 less than 30 - Overweight&#13;&#10;2.BMI greter than or equalto 30 - Obese"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

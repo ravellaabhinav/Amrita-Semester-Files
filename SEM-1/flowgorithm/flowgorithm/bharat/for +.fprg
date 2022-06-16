@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-27 04:20:00 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMjc7MDM6NDQ6MzIg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjEx"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMjc7MDQ6MjA6MDAg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <for variable="i" start="0" end="n" direction="inc" step="1">
+                <if expression="i==n">
+                    <then>
+                        <if expression="i==0">
+                            <then>
+                                <output expression="&quot;0&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="n&gt;0">
+                                    <then>
+                                        <output expression="&quot;+&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="" newline="True"/>
+                                        <output expression="&quot;-&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

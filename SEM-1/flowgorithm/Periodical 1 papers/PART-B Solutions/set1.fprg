@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-05 02:50:08 PM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC00Q0ozMTg5OzIwMTktMDktMDU7MDI6MjY6MjIgUE07Mjc2Mg=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC00Q0ozMTg5OzIwMTktMDktMDU7MDI6NTA6MDggUE07MTsyODcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, n, guess" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="guess" expression="1"/>
+            <do expression="n!=(guess*guess)">
+                <assign variable="r" expression="n/guess"/>
+                <assign variable="guess" expression="(guess+r)/2"/>
+            </do>
+            <output expression="guess" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

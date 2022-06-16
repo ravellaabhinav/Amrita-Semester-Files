@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-27 03:43:15 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDg6MDg6MTggUE07IDI5NDA="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDg6MTU6MDUgUE07IDI5MzQ="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yNzswMzo0MzoxNSBQTTsxOzMxODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Printing Factors of a number"/>
+            <comment text="A number's factor divides it completely;i.e.; remainder is zero.&#13;&#10;3 is a factor of 6 --&gt; 6 mod 3 = 0"/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter N&quot;" newline="True"/>
+            <input variable="N"/>
+            <comment text="Read the number"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <comment text="Write appropriate condition to check whether i is a factor of Number. &#13;&#10;If i is a factor, print i"/>
+                <if expression="N % i = 0">
+                    <then>
+                        <output expression="&quot;factors &quot; &amp; i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

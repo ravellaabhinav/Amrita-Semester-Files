@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-09 02:57:04 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0wOTswMjo0NToyOCBQTTszMDg0"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0wOTswMjo1NzowNCBQTTsxOzMxODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Find the bigger number among the two numbers&quot;" newline="True"/>
+            <declare name="number1" type="Integer" array="False" size=""/>
+            <declare name="number2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter number1&quot;" newline="True"/>
+            <input variable="number1"/>
+            <output expression="&quot;Enter number2&quot;" newline="True"/>
+            <input variable="number2"/>
+            <if expression="number1&gt;number2">
+                <then>
+                    <output expression="number1 &amp; &quot; is bigger than &quot; &amp; number2" newline="True"/>
+                </then>
+                <else>
+                    <output expression="number2 &amp; &quot; is bigger than &quot; &amp; number1" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 04:10:39 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMC0yOTsgMDQ6MDg6MjMgUE07IDI5MzI="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMC0yOTsgMDQ6MTA6MzkgUE07IDI5MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Function example - A simple function that print the message &quot;Welcome to Functions&quot;"/>
+            <call expression="PrintMessage"/>
+        </body>
+    </function>
+    <function name="PrintMessage" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to Functions&quot;"/>
+        </body>
+    </function>
+</flowgorithm>

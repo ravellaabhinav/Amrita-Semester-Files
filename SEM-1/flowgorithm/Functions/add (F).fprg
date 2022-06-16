@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RAVELLA ABHINAV"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-31 02:19:52 PM"/>
+        <attribute name="created" value="UkFWRUxMQSBBQkhJTkFWO0FCSEk7MjAxOS0xMC0zMTswMjoxMzoxNSBQTTsyNjA1"/>
+        <attribute name="edited" value="UkFWRUxMQSBBQkhJTkFWO0FCSEk7MjAxOS0xMC0zMTswMjoxOTo1MiBQTTsxOzI3MjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, p" type="Integer" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <assign variable="p" expression="add(n1,n2)"/>
+            <output expression="p" newline="True"/>
+        </body>
+    </function>
+    <function name="add" type="Integer" variable="result">
+        <parameters>
+            <parameter name="first" type="Integer" array="False"/>
+            <parameter name="second" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <assign variable="result" expression="first+second"/>
+        </body>
+    </function>
+</flowgorithm>

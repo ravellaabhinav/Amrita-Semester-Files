@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-23 04:19:52 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjM7MDM6MzQ6MTYg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjA5"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjM7MDQ6MTk6NTIg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzY7MTkzMjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, n, c, ms, ls, t, m" type="Integer" array="False" size=""/>
+            <output expression="&quot;no.of num&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;values&quot;" newline="True"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <for variable="j" start="0" end="n-2" direction="inc" step="1">
+                    <if expression="a[j]&gt;a[j+1]">
+                        <then>
+                            <assign variable="c" expression="a[j]"/>
+                            <assign variable="a[j]" expression="a[j+1]"/>
+                            <assign variable="a[j+1]" expression="c"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot;tell&quot;" newline="True"/>
+            <input variable="m"/>
+            <assign variable="ms" expression="0"/>
+            <assign variable="ls" expression="0"/>
+            <for variable="i" start="n-1" end="n-m" direction="dec" step="1">
+                <assign variable="ms" expression="ms+a[i]"/>
+            </for>
+            <for variable="i" start="0" end="m-1" direction="inc" step="1">
+                <assign variable="ls" expression="ls+a[i]"/>
+            </for>
+            <assign variable="t" expression="ms-ls"/>
+            <output expression="&quot;ans   &quot;&amp;t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

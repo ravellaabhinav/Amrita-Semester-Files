@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-30 02:45:57 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMzA7MDI6MDY6MTMg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjAy"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMzA7MDI6NDU6NTcg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, s, n, p, q, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;number of values using&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <assign variable="s" expression="0"/>
+            <output expression="&quot;enter values&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="0" end="n-3" direction="inc" step="1">
+                <assign variable="p" expression="a[i]"/>
+                <assign variable="q" expression="a[i+2]"/>
+                <assign variable="x" expression="a[i+1]"/>
+                <if expression="p&gt;x&amp;&amp;q&gt;x">
+                    <then>
+                        <assign variable="s" expression="s+1"/>
+                        <output expression="a[i+1]" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="p&lt;x&amp;&amp;q&lt;x">
+                    <then>
+                        <assign variable="s" expression="s+1"/>
+                        <output expression="a[i+1]" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;count is  &quot;&amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-18 03:50:46 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0xODswMzo0NToxOCBQTTszMDg0"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0xODswMzo1MDo0NiBQTTsxOzMxODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <do expression="N&lt;0">
+                <output expression="&quot;Enter a positive value&quot;" newline="True"/>
+                <input variable="N"/>
+            </do>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="i &amp; &quot;*&quot; &amp; N &amp;&quot;=&quot; &amp; (i*N)" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

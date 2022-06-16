@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-18 04:06:48 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDc6NDY6NTkgUE07IDI5NDY="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDc6NTQ6NTIgUE07IDI5Mzg="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0xODswNDowNjo0OCBQTTsyOzMxOTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Checking whether a number is Positive, Zero or Negative"/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter an integer&quot;" newline="True"/>
+            <input variable="N"/>
+            <if expression="N=0">
+                <then>
+                    <output expression="&quot;The entered number is 0&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="N&lt;0">
+                        <then>
+                            <output expression="&quot;the entered number is negative&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;the enetered number is positive&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;thank you&quot;" newline="True"/>
+            <comment text="Complete the program to check whether the number is Positive (N&gt;0), Zero (N==0) or Negative (N&lt;0) by including necessary blocks"/>
+        </body>
+    </function>
+</flowgorithm>

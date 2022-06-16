@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-09 11:43:48 AM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC1SMDZENkVFOzIwMTktMDgtMDk7MTE6MjY6MjIgQU07Mjc4OA=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC1SMDZENkVFOzIwMTktMDgtMDk7MTE6NDM6NDggQU07MTsyOTAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, k" type="Real" array="False" size=""/>
+            <output expression="&quot;enter 1 for 2 numbers &amp; 2 for 3 numbers&quot;" newline="True"/>
+            <input variable="k"/>
+            <if expression="k==1">
+                <then>
+                    <output expression="&quot;enter your numbers&quot;" newline="True"/>
+                    <input variable="a"/>
+                    <input variable="b"/>
+                    <if expression="a&gt;b">
+                        <then>
+                            <output expression="a&amp;&quot;is big value&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="b&amp;&quot;is big value&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;enter your 3 numbers&quot;" newline="True"/>
+                    <input variable="a"/>
+                    <input variable="b"/>
+                    <input variable="c"/>
+                    <if expression="a&gt;b&amp;&amp;a&gt;C">
+                        <then>
+                            <output expression="a&amp;&quot;is big value&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="b&gt;c">
+                                <then>
+                                    <output expression="b&amp;&quot;is big value&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="c&amp;&quot;is big value&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

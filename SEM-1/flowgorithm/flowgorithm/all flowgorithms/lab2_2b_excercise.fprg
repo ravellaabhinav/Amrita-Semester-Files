@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-09 02:10:21 PM"/>
+        <attribute name="created" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAyOjU3OjEwIFBNOzE5Njg="/>
+        <attribute name="edited" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAzOjA1OjA2IFBNOzM7MjA3Nw=="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0wOTswMjoxMDoyMSBQTTsyOzMxNzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="input" type="String" array="False" size=""/>
+            <comment text="Insert a terminal to tive Proper Message to the user [Ask the user to enter his/her name]"/>
+            <output expression="&quot;Enter your name&quot;" newline="True"/>
+            <input variable="input"/>
+            <output expression="&quot;Hello!!! &quot; &amp; input" newline="True"/>
+            <comment text="Add a terminal to display the value stored in &quot;input&quot;"/>
+        </body>
+    </function>
+</flowgorithm>

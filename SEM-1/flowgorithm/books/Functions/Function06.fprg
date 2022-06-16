@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-30 09:23:58 AM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMC0zMDsgMDk6MjA6NDAgQU07IDI5MDc="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMC0zMDsgMDk6MjM6NTggQU07IDI5MTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a&quot;"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter b&quot;"/>
+            <input variable="b"/>
+            <output expression="a&amp;&quot; to the power &quot;&amp;b&amp;&quot; = &quot;&amp;Power(a,b)"/>
+        </body>
+    </function>
+    <function name="Power" type="Integer" variable="Result">
+        <parameters>
+            <parameter name="Number" type="Integer" array="False"/>
+            <parameter name="Exponent" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Result" type="Integer" array="False" size=""/>
+            <assign variable="Result" expression="Number^Exponent"/>
+        </body>
+    </function>
+</flowgorithm>

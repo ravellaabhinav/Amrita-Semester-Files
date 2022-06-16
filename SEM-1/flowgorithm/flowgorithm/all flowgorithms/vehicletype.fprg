@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-27 08:35:23 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yNzswNjo0MTo1MCBQTTszMDc5"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yNzswODozNToyMyBQTTsxOzMxOTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price, vehicletax, weight, insurance, cost, weighttax" type="Real" array="False" size=""/>
+            <declare name="vehicletype, P, B" type="String" array="False" size=""/>
+            <output expression="&quot;Enter vehicle type&quot;" newline="True"/>
+            <input variable="vehicletype"/>
+            <if expression="vehicletype == &quot;P&quot;">
+                <then>
+                    <output expression="&quot;enter price&quot;" newline="True"/>
+                    <input variable="price"/>
+                    <output expression="&quot;Enter weight &quot;" newline="True"/>
+                    <input variable="weight"/>
+                    <assign variable="vehicletax" expression="5*(price)/100"/>
+                    <assign variable="insurance" expression="1*(price)/100"/>
+                    <assign variable="weighttax" expression="1*(weight)/100"/>
+                    <assign variable="cost" expression="price+vehicletax+weighttax+insurance"/>
+                    <output expression="&quot;vehicletax = &quot; &amp; vehicletax" newline="True"/>
+                    <output expression="&quot;cost of vehicle = &quot; &amp; cost" newline="True"/>
+                    <output expression="&quot;insurance = &quot; &amp; insurance" newline="True"/>
+                    <output expression="&quot;weighttax = &quot; &amp; weighttax" newline="True"/>
+                </then>
+                <else>
+                    <if expression="vehicletype == &quot;B&quot;">
+                        <then>
+                            <output expression="&quot;enter price&quot;" newline="True"/>
+                            <input variable="price"/>
+                            <output expression="&quot;Enter weight &quot;" newline="True"/>
+                            <input variable="weight"/>
+                            <assign variable="vehicletax" expression="10*(price)/100"/>
+                            <assign variable="insurance" expression="3*(price)/100"/>
+                            <assign variable="weighttax" expression="3*(weight)/100"/>
+                            <assign variable="cost" expression="price+vehicletax+weighttax+insurance"/>
+                            <output expression="&quot;vehicletax = &quot; &amp; vehicletax" newline="True"/>
+                            <output expression="&quot;insurance = &quot; &amp; insurance" newline="True"/>
+                            <output expression="&quot;weighttax = &quot; &amp; weighttax" newline="True"/>
+                            <output expression="&quot;cost of vehicle = &quot; &amp; cost" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

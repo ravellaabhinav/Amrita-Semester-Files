@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-18 03:42:39 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0xODswMzozNDo0MiBQTTszMDc5"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0xODswMzo0MjozOSBQTTsxOzMxOTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <do expression="N&lt;0">
+                <output expression="&quot;Enter a positive integer&quot;" newline="True"/>
+                <input variable="N"/>
+            </do>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <for variable="j" start="1" end="N" direction="inc" step="1">
+                    <output expression="i &amp; &quot;*&quot; &amp; j &amp; &quot; = &quot;&amp; (i*j)" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

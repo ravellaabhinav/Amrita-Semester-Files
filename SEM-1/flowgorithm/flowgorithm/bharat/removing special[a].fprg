@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-09 09:47:18 &#2346;&#2370;&#2352;&#2381;&#2357;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMTAtMDg7MDk6MzA6MTAg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzIzOTk5"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMTAtMDk7MDk6NDc6MTgg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzM7MjQxMjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, p, b" type="String" array="False" size=""/>
+            <declare name="l, k, x, y, t, s, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;write&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="a" expression="&quot;&quot;"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="t" expression="len(b)"/>
+            <for variable="l" start="0" end="t-1" direction="inc" step="1">
+                <assign variable="p" expression="char(b,l)"/>
+                <assign variable="k" expression="tocode(p)"/>
+                <for variable="x" start="65" end="91" direction="inc" step="1">
+                    <if expression="k==x">
+                        <then>
+                            <assign variable="a" expression="a&amp;char(b,l)"/>
+                            <assign variable="s" expression="s+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <for variable="y" start="97" end="123" direction="inc" step="1">
+                    <if expression="k==y">
+                        <then>
+                            <assign variable="a" expression="a&amp;char(b,l)"/>
+                            <assign variable="s" expression="s+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

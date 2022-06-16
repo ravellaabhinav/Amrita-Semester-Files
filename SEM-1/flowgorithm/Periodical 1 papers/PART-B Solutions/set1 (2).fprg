@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-05 03:42:26 PM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC00Q0ozMTg5OzIwMTktMDktMDU7MDI6NTA6MTIgUE07Mjc1OA=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC00Q0ozMTg5OzIwMTktMDktMDU7MDM6NDI6MjYgUE07MTsyODcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j" type="Integer" array="False" size=""/>
+            <for variable="n" start="1" end="500" direction="inc" step="1">
+                <for variable="i" start="1" end="n" direction="inc" step="1">
+                    <for variable="j" start="1" end="i" direction="inc" step="1">
+                        <if expression="(n*n)!=(i*i)+(j*j)">
+                            <then/>
+                            <else>
+                                <if expression="n&lt;500&amp;&amp;i&lt;500&amp;&amp;j&lt;500">
+                                    <then>
+                                        <output expression="i" newline="False"/>
+                                        <output expression="&quot; &quot;" newline="False"/>
+                                        <output expression="j" newline="False"/>
+                                        <output expression="&quot; &quot;" newline="False"/>
+                                        <output expression="n" newline="True"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </for>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

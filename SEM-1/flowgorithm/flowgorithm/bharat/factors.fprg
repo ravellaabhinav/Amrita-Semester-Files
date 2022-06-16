@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-18 08:08:11 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTg7MDg6MDA6NTgg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjE2"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTg7MDg6MDg6MTEg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;give your number&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;your factors are...&quot;" newline="True"/>
+            <while expression="i&lt;n">
+                <assign variable="i" expression="i+1"/>
+                <if expression="n%i==0">
+                    <then>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

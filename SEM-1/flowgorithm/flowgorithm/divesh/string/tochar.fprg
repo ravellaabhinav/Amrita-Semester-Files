@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RAVELLA ABHINAV"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-13 09:13:16 PM"/>
+        <attribute name="created" value="UkFWRUxMQSBBQkhJTkFWO0FCSEk7MjAxOS0xMC0xMzswODo0Nzo1MSBQTTsyNjE4"/>
+        <attribute name="edited" value="UkFWRUxMQSBBQkhJTkFWO0FCSEk7MjAxOS0xMC0xMzswOToxMzoxNiBQTTsxOzI3MjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s" type="String" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="s" expression="tochar(n)"/>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

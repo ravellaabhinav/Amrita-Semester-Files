@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-21 03:39:14 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yMTswMzozNjozOCBQTTszMDgw"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yMTswMzozOToxNCBQTTsxOzMxODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <declare name="product" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter i value&quot;" newline="True"/>
+            <input variable="i"/>
+            <output expression="&quot;Enter j value&quot;" newline="True"/>
+            <input variable="j"/>
+            <assign variable="product" expression="i*j"/>
+            <output expression="&quot;the product of two numbers is &quot; &amp; product" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

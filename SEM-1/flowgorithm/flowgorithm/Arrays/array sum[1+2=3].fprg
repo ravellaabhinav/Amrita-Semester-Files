@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RAVELLA ABHINAV"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-03 02:30:51 PM"/>
+        <attribute name="created" value="UkFWRUxMQSBBQkhJTkFWO0xBUFRPUC1WUEUwQ1VIRzsyMDE5LTA5LTEyOzAzOjQxOjA3IFBNOzM0MjY="/>
+        <attribute name="edited" value="UkFWRUxMQSBBQkhJTkFWO0xBUFRPUC1WUEUwQ1VIRzsyMDE5LTEwLTAzOzAyOjMwOjUxIFBNOzQ7MzUyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Array1, Array2, Array3" type="Integer" array="True" size="5"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <for variable="index" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;enter the values of Array1[&quot; &amp; index &amp;&quot;]&quot;" newline="True"/>
+                <input variable="Array1[index]"/>
+            </for>
+            <for variable="index" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;enter the values of Array2[&quot; &amp; index &amp;&quot;]&quot;" newline="True"/>
+                <input variable="Array2[index]"/>
+            </for>
+            <for variable="index" start="0" end="4" direction="inc" step="1">
+                <assign variable="Array3[index]" expression="Array1[index]+Array2[index]"/>
+                <output expression="&quot;sum of Arrays is &quot;&amp;Array3[index]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

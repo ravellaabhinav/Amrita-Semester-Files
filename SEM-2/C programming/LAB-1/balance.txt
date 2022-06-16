@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+    int ocredit,obal,ncredit,nbal;
+    scanf("%d %d",&ocredit,&obal);
+    printf("customers old limit is %d\n",ocredit);
+    printf("old balance is %d\n",obal);
+    printf("new credit limit is %d\n",(ocredit)/2);
+    printf("balance is %d\n",((obal)-(ocredit)/(2)));
+    return 0;
+}

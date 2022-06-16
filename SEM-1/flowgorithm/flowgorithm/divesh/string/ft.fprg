@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-05 02:55:10 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMTAtMDQ7MDk6NDk6MTgg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzI0MDEz"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMTAtMDU7MDI6NTU6MTAg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, p, d" type="String" array="False" size=""/>
+            <declare name="i, n, s, h" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <assign variable="n" expression="len(a)"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="p" expression="char(a,i)"/>
+                <assign variable="s" expression="tocode(p)"/>
+                <assign variable="h" expression="s-32"/>
+                <assign variable="d" expression="tochar(h)"/>
+                <output expression="d" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

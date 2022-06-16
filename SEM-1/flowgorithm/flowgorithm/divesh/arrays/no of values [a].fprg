@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-21 08:54:39 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjE7MDg6NDA6MzYg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjEx"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjE7MDg6NTQ6Mzkg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, t, p, x, k, n, s" type="Integer" array="False" size=""/>
+            <output expression="&quot;no of values&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;enter values&quot;" newline="True"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;n">
+                <input variable="a[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;enter diff&quot;" newline="True"/>
+            <input variable="k"/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="t" expression="a[i]"/>
+                <for variable="x" start="i+1" end="n-1" direction="inc" step="1">
+                    <assign variable="p" expression="a[x]"/>
+                    <if expression="(t-p)==k||(p-t)==k">
+                        <then>
+                            <assign variable="s" expression="s+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot;no of values are   &quot;&amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

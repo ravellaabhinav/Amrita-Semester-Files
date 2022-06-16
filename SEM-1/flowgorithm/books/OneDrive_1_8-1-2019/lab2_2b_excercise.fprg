@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-07-19 03:05:06 PM"/>
+        <attribute name="created" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAyOjU3OjEwIFBNOzE5Njg="/>
+        <attribute name="edited" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAzOjA1OjA2IFBNOzM7MjA3Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="input" type="String" array="False" size=""/>
+            <comment text="Insert a terminal to tive Proper Message to the user [Ask the user to enter his/her name]"/>
+            <input variable="input"/>
+            <comment text="Add a terminal to display the value stored in &quot;input&quot;"/>
+        </body>
+    </function>
+</flowgorithm>

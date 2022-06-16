@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-04 09:20:54 AM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMS0wNDsgMDk6MTM6NDMgQU07IDI5MTQ="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMS0wNDsgMDk6MjA6NTQgQU07IDI5MTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter an integer&quot;"/>
+            <input variable="Num"/>
+            <output expression="&quot;Sum of digits = &quot;&amp;RecSum(Num)"/>
+        </body>
+    </function>
+    <function name="RecSum" type="Integer" variable="Sum">
+        <parameters>
+            <parameter name="N" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Sum" type="Integer" array="False" size=""/>
+            <assign variable="Sum" expression="0"/>
+            <if expression="N==0">
+                <then>
+                    <assign variable="Sum" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="Sum" expression="Sum+(N%10)+RecSum(N/10)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 04:47:38 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMC0yOTsgMDQ6MDg6MjMgUE07IDI5MzI="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMC0yOTsgMDQ6NDc6MzggUE07IDI5NDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Function example - A function that prints the largest of two numbers passed as arguments&#13;&#10;Passing arguments"/>
+            <declare name="N1, N2, L" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter first integer&quot;"/>
+            <input variable="N1"/>
+            <output expression="&quot;Enter second integer&quot;"/>
+            <input variable="N2"/>
+            <call expression="Largest(N1,N2)"/>
+        </body>
+    </function>
+    <function name="Largest" type="None" variable="">
+        <parameters>
+            <parameter name="Num1" type="Integer" array="False"/>
+            <parameter name="Num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Big" type="Integer" array="False" size=""/>
+            <if expression="Num1&gt;Num2">
+                <then>
+                    <assign variable="Big" expression="Num1"/>
+                </then>
+                <else>
+                    <assign variable="Big" expression="Num2"/>
+                </else>
+            </if>
+            <output expression="Big"/>
+        </body>
+    </function>
+</flowgorithm>

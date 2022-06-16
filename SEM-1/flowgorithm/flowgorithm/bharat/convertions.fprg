@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-11 01:00:23 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC1SMDZENkVFOzIwMTktMDgtMDk7MDk6NTc6MDcgQU07MjgwMg=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC1SMDZENkVFOzIwMTktMDgtMDk7MTA6MjY6NDkgQU07MTsyOTA0"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTE7MDE6MDA6MjMg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, c, f, i, cs, fh, kg, p, k" type="Real" array="False" size=""/>
+            <output expression="&quot;press to convert:  1 for meter to centimeter,2 for feet to inches,3 for celsius to farenheat,4 kilogram to pound&quot;" newline="True"/>
+            <input variable="k"/>
+            <if expression="k==1">
+                <then>
+                    <output expression="&quot;enter meters=&quot;" newline="True"/>
+                    <input variable="m"/>
+                    <assign variable="c" expression="m*100"/>
+                    <output expression="&quot;centimeters=&quot;&amp;c" newline="True"/>
+                </then>
+                <else>
+                    <if expression="k==2">
+                        <then>
+                            <output expression="&quot;enter feets=&quot;" newline="True"/>
+                            <input variable="f"/>
+                            <assign variable="i" expression="12*f"/>
+                            <output expression="&quot;inches=&quot;&amp;i" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="k==3">
+                                <then>
+                                    <output expression="&quot;enter celsius&quot;" newline="True"/>
+                                    <input variable="cs"/>
+                                    <assign variable="fh" expression="cs*9.5+32"/>
+                                    <output expression="&quot;fahrenheat=&quot;&amp;fh" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="k==4">
+                                        <then>
+                                            <output expression="&quot;enter kg=&quot;" newline="True"/>
+                                            <input variable="kg"/>
+                                            <assign variable="p" expression="kg/2.2"/>
+                                            <output expression="&quot;pounds=&quot;&amp;p" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;enter correct values seen above&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

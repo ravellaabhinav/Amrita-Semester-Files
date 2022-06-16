@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-09 02:44:18 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0wOTswMjozOToxOSBQTTszMDg3"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0wOTswMjo0NDoxOCBQTTsxOzMxOTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bill" type="Real" array="False" size=""/>
+            <declare name="tip" type="Real" array="False" size=""/>
+            <output expression="&quot;What's  your bill?&quot;" newline="True"/>
+            <input variable="bill"/>
+            <assign variable="tip" expression="0.15*bill"/>
+            <output expression="&quot;So the tip is $&quot; &amp; tip" newline="True"/>
+            <output expression="&quot;the total bill is $&quot; &amp; (bill+tip)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

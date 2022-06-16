@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-09 02:05:27 PM"/>
+        <attribute name="created" value="VVNFUjtBRE1JTjsyMDE5LTA3LTEyOzEwOjM4OjUwIEFNOzE5NDg="/>
+        <attribute name="edited" value="VVNFUjtBRE1JTjsyMDE5LTA3LTEyOzEwOjUyOjE0IEFNOzQ7MjA1NQ=="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0wOTswMjowNToyNyBQTTsxOzMxODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Insert an output box to display your name,roll number, department and address here..."/>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;name:shanthan Reddy&quot;" newline="True"/>
+            <declare name="rollnumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;ROLL NO.:19459&quot;" newline="True"/>
+            <declare name="department" type="String" array="False" size=""/>
+            <output expression="&quot;Department:CSE&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

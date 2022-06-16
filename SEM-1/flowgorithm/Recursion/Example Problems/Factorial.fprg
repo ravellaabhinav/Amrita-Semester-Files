@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-04 09:08:40 AM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMS0wNDsgMDk6MDE6NDggQU07IDI5MTY="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0xMS0wNDsgMDk6MDg6NDAgQU07IDI5MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a positive integer&quot;"/>
+            <input variable="Num"/>
+            <if expression="Num&lt;0">
+                <then>
+                    <output expression="&quot;No factorial for negative numbers&quot;"/>
+                </then>
+                <else>
+                    <output expression="RecFactorial(Num)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="RecFactorial" type="Integer" variable="f">
+        <parameters>
+            <parameter name="N" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="f" type="Integer" array="False" size=""/>
+            <if expression="N==0">
+                <then>
+                    <assign variable="f" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="f" expression="N*RecFactorial(N-1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

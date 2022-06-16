@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="nikunj"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-22 03:34:08 PM"/>
+        <attribute name="created" value="bmlrdW5qO01TSTsyMDE5LTA4LTIwOzAyOjU0OjEwIFBNOzIxNjY="/>
+        <attribute name="edited" value="bmlrdW5qO01TSTsyMDE5LTA4LTIwOzAzOjQ3OjIwIFBNOzM7MjI4MA=="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yMjswMzozNDowOCBQTTsxOzMxODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="result, tPass, tFail, i" type="Integer" array="False" size=""/>
+            <assign variable="tPass" expression="0"/>
+            <assign variable="tFail" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=10">
+                <output expression="&quot;Enter Result(1-Pass, 2-Fail)&quot;" newline="True"/>
+                <input variable="result"/>
+                <if expression="result!=1 || result!=2">
+                    <then>
+                        <output expression="&quot;Enter valid Input (i.e 1 or 2)&quot;" newline="True"/>
+                        <breakpoint/>
+                    </then>
+                    <else>
+                        <if expression="result==1">
+                            <then>
+                                <assign variable="tPass" expression="tPass+1"/>
+                                <assign variable="i" expression="i+1"/>
+                            </then>
+                            <else>
+                                <assign variable="tFail" expression="tFail+1"/>
+                                <assign variable="i" expression="i+1"/>
+                            </else>
+                        </if>
+                        <output expression="&quot;Total no. of Passed Students = &quot;&amp;tPass" newline="True"/>
+                        <output expression="&quot;Total no. of Failed Students = &quot; &amp;tFail" newline="True"/>
+                        <if expression="tPass&gt;8">
+                            <then>
+                                <output expression="&quot;Bonus to instructor!&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

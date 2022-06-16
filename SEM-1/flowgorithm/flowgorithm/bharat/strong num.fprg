@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-27 09:50:26 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMjc7MDk6Mjc6NDgg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjI1"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMjc7MDk6NTA6MjYg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzM7MTkzMjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, s, k, r, f" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="f" expression="1"/>
+            <assign variable="s" expression="0"/>
+            <input variable="n"/>
+            <assign variable="k" expression="n"/>
+            <while expression="n&gt;0">
+                <assign variable="r" expression="n%10"/>
+                <assign variable="f" expression="1"/>
+                <assign variable="i" expression="0"/>
+                <while expression="i&lt;r">
+                    <assign variable="i" expression="i+1"/>
+                    <assign variable="f" expression="f*i"/>
+                </while>
+                <assign variable="n" expression="n/10"/>
+                <assign variable="s" expression="s+f"/>
+                <output expression="s" newline="True"/>
+            </while>
+            <if expression="s==k">
+                <then>
+                    <output expression="&quot;strong num&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;not strong num&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

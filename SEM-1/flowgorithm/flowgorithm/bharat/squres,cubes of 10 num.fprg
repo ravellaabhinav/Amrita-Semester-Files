@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-19 03:42:15 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTk7MDM6MzQ6MzIg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjEx"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTk7MDM6NDI6MTUg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, p, s, c" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="p" expression="0"/>
+            <output expression="&quot;squares of 1st 10 numbers....&quot;" newline="True"/>
+            <while expression="i&lt;=10">
+                <assign variable="i" expression="i+1"/>
+                <assign variable="s" expression="i^2"/>
+                <output expression="i&amp;&quot;  square is  &quot;&amp;s" newline="True"/>
+            </while>
+            <output expression="&quot;cubes of 1st 10 numbers......&quot;" newline="True"/>
+            <while expression="p&lt;=10">
+                <assign variable="p" expression="p+1"/>
+                <assign variable="c" expression="p^3"/>
+                <output expression="p&amp;&quot;   cube is  &quot;&amp;c" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RAVELLA ABHINAV"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-31 03:58:32 PM"/>
+        <attribute name="created" value="UkFWRUxMQSBBQkhJTkFWO0FCSEk7MjAxOS0xMC0zMTswMjo0MDoyNiBQTTsyNjA3"/>
+        <attribute name="edited" value="UkFWRUxMQSBBQkhJTkFWO0FCSEk7MjAxOS0xMC0zMTswMjo0NzozMiBQTTs0O0RoYW55YSBNIEQ7VFJZQU1CQUtBTTsyMDE5LTEwLTMwOzA5OjE1OjQ0IEFNO0Z1bmN0aW9uMDUuZnByZzs3MDc1"/>
+        <attribute name="edited" value="UkFWRUxMQSBBQkhJTkFWO0FCSEk7MjAxOS0xMC0zMTswMzo1ODozMiBQTTsxMjsyNzcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, reverse, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a number&quot;" newline="True"/>
+            <input variable="num"/>
+            <call expression="reversenumber(num)"/>
+        </body>
+    </function>
+    <function name="reversenumber" type="Integer" variable="reverse">
+        <parameters>
+            <parameter name="givennumber" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="reverse, r" type="Integer" array="False" size=""/>
+            <assign variable="reverse" expression="0"/>
+            <while expression="givennumber&gt;0">
+                <assign variable="r" expression="givennumber mod 10"/>
+                <assign variable="reverse" expression="(reverse*10)+r"/>
+                <assign variable="givennumber" expression="givennumber/10"/>
+            </while>
+            <output expression="reverse" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

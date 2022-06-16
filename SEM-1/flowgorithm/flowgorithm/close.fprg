@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DIVESH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-14 04:09:32 PM"/>
+        <attribute name="created" value="RElWRVNIO0RJVkVTSDsyMDE5LTExLTE0OzA0OjA3OjA1IFBNOzIxODE="/>
+        <attribute name="edited" value="RElWRVNIO0RJVkVTSDsyMDE5LTExLTE0OzA0OjA5OjAzIFBNOzQ7RElWRVNIO0RJVkVTSDsyMDE5LTExLTE0OzAyOjE4OjE1IFBNO0VWQUwgMTQuMTEuMTkuZnByZzs1Nzk0"/>
+        <attribute name="edited" value="RElWRVNIO0RJVkVTSDsyMDE5LTExLTE0OzA0OjA5OjMyIFBNOzE7MjI5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, D, R1, R2" type="Real" array="False" size=""/>
+            <output expression="&quot;ENTER VALUE FOR A&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;ENTER VALUE FOR B&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;ENTER THE POWER&quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="R1" expression="(A*A+B*B)^(1/2)"/>
+            <output expression="&quot;POLAR POWER: &quot;&amp; R1^N &amp;&quot;(COS(&quot;&amp; N*(arctan(b/a)) &amp;&quot;) + i(SIN&quot;&amp;  N*(arctan(b/a)) &amp;&quot;)&quot;" newline="True"/>
+            <breakpoint/>
+            <declare name="A, B, C, D, R1, R2" type="Real" array="False" size=""/>
+            <output expression="&quot;ENTER VALUE FOR A&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;ENTER VALUE FOR B&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;ENTER VALUE FOR C&quot;" newline="True"/>
+            <input variable="C"/>
+            <output expression="&quot;ENTER VALUE FOR D&quot;" newline="True"/>
+            <input variable="D"/>
+            <assign variable="R1" expression="(A*A+B*B)^(1/2)"/>
+            <assign variable="R2" expression="(C*C+D*D)^(1/2)"/>
+            <output expression="&quot;POLAR MULTIPLY: &quot;&amp; R1*R2 &amp;&quot;(COS&quot;&amp; (arctan(b/a))+(arctan(d/c)) &amp;&quot;) + i(SIN&quot;&amp; (arctan(b/a))+(arctan(d/c)) &amp;&quot;)&quot;" newline="True"/>
+            <breakpoint/>
+            <declare name="A, B, C, D, R1, R2" type="Real" array="False" size=""/>
+            <output expression="&quot;ENTER VALUE FOR A&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;ENTER VALUE FOR B&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;ENTER VALUE FOR C&quot;" newline="True"/>
+            <input variable="C"/>
+            <output expression="&quot;ENTER VALUE FOR D&quot;" newline="True"/>
+            <input variable="D"/>
+            <assign variable="R1" expression="(A*A+B*B)^(1/2)"/>
+            <assign variable="R2" expression="(C*C+D*D)^(1/2)"/>
+            <output expression="&quot;POLAR FORM: &quot;&amp; R1/R2 &amp;&quot;(COS&quot;&amp; (arctan(b/a))-(arctan(d/c)) &amp;&quot;) + i(SIN&quot;&amp; (arctan(b/a))-(arctan(d/c)) &amp;&quot;)&quot;" newline="True"/>
+            <breakpoint/>
+            <declare name="A, B" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER VALUE FOR A&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;ENTER VALUE FOR B&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;POLAR FORM: &quot;&amp; (A*A+B*B)^(1/2) &amp;&quot;( COS&quot;&amp; arctan(b/a) &amp;&quot;) + (SIN&quot;&amp; arctan(b/a)&amp;&quot; )&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

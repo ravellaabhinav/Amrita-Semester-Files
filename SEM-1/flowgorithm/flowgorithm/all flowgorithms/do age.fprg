@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-27 01:47:53 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yNzswMTo0MzozMSBQTTszMDc1"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yNzswMTo0Nzo1MyBQTTsxOzMxOTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter valid age&quot;" newline="True"/>
+            <do expression="age&lt;0 or age&gt;110">
+                <input variable="age"/>
+            </do>
+            <output expression="&quot;oh you are too young&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+	
+	int n,i,j,k;
+	scanf("%d",&n);
+	int a[n];
+	for (i=0;i<=n-1;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	k=0;
+	for (i=0;i<=n-1;i++)
+	{
+		for (j=i+1;j<=n-1;j++)
+		{
+			if ((a[j]+a[i])%4==0) 
+			{
+				printf("%d + %d",a[i],a[j]);
+				printf("\n");
+				k=k+1;
+			}
+			
+		}
+	}
+	printf("%d pairs" ,k);
+	return 0;
+}

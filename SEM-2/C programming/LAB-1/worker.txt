@@ -1,0 +1,16 @@
+#include <Stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    if (n>0 && n<10) {
+        printf("Under-worked");
+    }
+    else if (n>=10 && n<25) {
+    printf("satisfactory");
+    }
+    else {
+        printf("over-worked");
+    }
+    return 0;
+}

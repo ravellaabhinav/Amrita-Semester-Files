@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-10 09:30:03 AM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0xMDswOToyMDo1OCBBTTszMDY0"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0xMDswOTozMDowMyBBTTsxOzMxNjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Weight" type="Real" array="False" size=""/>
+            <declare name="Height" type="Real" array="False" size=""/>
+            <declare name="BMI" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter your height in cm's&quot;" newline="True"/>
+            <input variable="Height"/>
+            <output expression="&quot;Enter your Weight in Kg's&quot;" newline="True"/>
+            <input variable="Weight"/>
+            <assign variable="BMI" expression="Weight/(Height*Height)*10000"/>
+            <if expression="BMI &lt;18.5">
+                <then>
+                    <output expression="&quot;the person is underweight&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="BMI&gt;=18.5&amp;&amp;BMI&lt;=24.5">
+                        <then>
+                            <output expression="&quot;the person is normal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;the person is overweight&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

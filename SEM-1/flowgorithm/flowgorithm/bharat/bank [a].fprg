@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-22 02:58:55 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjE7MDc6MDc6NDEg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjA5"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjI7MDI6NTg6NTUg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzM7MTkzMjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="k, n, i, m, s, h, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter no of members&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="p, t" type="Integer" array="True" size="4"/>
+            <declare name="b, a" type="Integer" array="True" size="n"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="m" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;enter 4 dig acc no&quot;" newline="True"/>
+                <assign variable="s" expression="0"/>
+                <for variable="k" start="0" end="3" direction="inc" step="1">
+                    <input variable="p[k]"/>
+                    <assign variable="s" expression="s*10+p[k]"/>
+                </for>
+                <assign variable="a[i]" expression="s"/>
+                <output expression="&quot;enter balance&quot;" newline="True"/>
+                <input variable="b[i]"/>
+            </for>
+            <output expression="&quot;find acc&quot;" newline="True"/>
+            <for variable="k" start="0" end="3" direction="inc" step="1">
+                <input variable="t[k]"/>
+                <assign variable="m" expression="m*10+t[k]"/>
+            </for>
+            <assign variable="c" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="a[i]==m">
+                    <then>
+                        <output expression="&quot;balance is  &quot;&amp;b[i]" newline="True"/>
+                        <assign variable="c" expression="1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="c==0">
+                <then>
+                    <output expression="&quot;acc no is wrong&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="h" expression="a[0]"/>
+            <for variable="i" start="1" end="n-1" direction="inc" step="1">
+                <if expression="h&gt;a[i]">
+                    <then/>
+                    <else>
+                        <assign variable="h" expression="a[i]"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;higest acc is  &quot;&amp;h" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-07-23 02:28:09 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wNy0yMzsgMDI6MjE6MjYgUE07IDI5Mjg="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wNy0yMzsgMDI6Mjg6MDkgUE07IDI5MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Find the bigger number"/>
+            <declare name="Num1" type="Integer" array="False" size=""/>
+            <declare name="Num2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the first number&quot;"/>
+            <comment text="Insert appropriate box to read Num1"/>
+            <output expression="&quot;Enter the second number&quot;"/>
+            <comment text="Insert appropriate box to read Num2"/>
+            <comment text="Note down the output for the following cases&#13;&#10;1. Num1 =10, Num2 = 20&#13;&#10;2. Num1 = 20, Num2 = 20&#13;&#10;3. Num1 = 20, Num2 = 10"/>
+            <if expression="Num1 &gt; Num2">
+                <then>
+                    <output expression="Num1 &amp; &quot;is bigger than&quot; &amp; Num2"/>
+                </then>
+                <else>
+                    <output expression="Num2 &amp; &quot;is bigger than&quot; &amp; Num1"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

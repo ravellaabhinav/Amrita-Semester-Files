@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-18 11:45:05 &#2346;&#2370;&#2352;&#2381;&#2357;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTg7MTE6MzI6Mzcg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzI0MDEy"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTg7MTE6NDU6MDUg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzM7MjQxMjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s, n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;no of values using&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="s" expression="0"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;enter values&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <if expression="n%2==0">
+                <then>
+                    <for variable="i" start="1" end="n" direction="inc" step="2">
+                        <assign variable="s" expression="s+a[i]"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="i" start="1" end="n-1" direction="inc" step="2">
+                        <assign variable="s" expression="s+a[i]"/>
+                    </for>
+                </else>
+            </if>
+            <output expression="&quot;sum of odd indices = &quot;&amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

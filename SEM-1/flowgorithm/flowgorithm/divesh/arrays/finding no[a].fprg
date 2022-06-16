@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-17 11:01:54 &#2346;&#2370;&#2352;&#2381;&#2357;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTc7MTA6Mzk6MTcg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzI0MDE1"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTc7MTE6MDE6NTQg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzE7MjQxMTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, i, n, k" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter no of values using&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;n">
+                <input variable="a[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;search your no&quot;" newline="True"/>
+            <input variable="x"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="x==a[i]">
+                    <then>
+                        <output expression="&quot;yes&quot;" newline="True"/>
+                        <output expression="&quot;position is   &quot;&amp;i" newline="True"/>
+                        <assign variable="k" expression="1"/>
+                    </then>
+                    <else>
+                        <assign variable="k" expression="0"/>
+                    </else>
+                </if>
+            </for>
+            <if expression="k==1">
+                <then/>
+                <else>
+                    <output expression="&quot;no is not present&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

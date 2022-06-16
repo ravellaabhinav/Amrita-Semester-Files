@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RAVELLA ABHINAV"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-12 02:50:21 PM"/>
+        <attribute name="created" value="UkFWRUxMQSBBQkhJTkFWO0xBUFRPUC1WUEUwQ1VIRzsyMDE5LTA5LTEyOzAyOjMxOjUxIFBNOzM0MjM="/>
+        <attribute name="edited" value="UkFWRUxMQSBBQkhJTkFWO0xBUFRPUC1WUEUwQ1VIRzsyMDE5LTA5LTEyOzAyOjUwOjIxIFBNOzE3OzM1ODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <declare name="myArray" type="Integer" array="True" size="5"/>
+            <for variable="index" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;enter the value for myArray[&quot; &amp; index &amp; &quot;]&quot;" newline="True"/>
+                <input variable="myArray[index]"/>
+            </for>
+            <output expression="&quot;the array values are &quot;" newline="True"/>
+            <for variable="index" start="0" end="4" direction="inc" step="1">
+                <output expression="myArray[index] &amp; &quot; &quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

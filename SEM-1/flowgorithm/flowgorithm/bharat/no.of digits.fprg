@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-16 10:01:05 &#2346;&#2370;&#2352;&#2381;&#2357;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTY7MDk6NTY6NTgg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzI0MDI1"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTY7MTA6MDE6MDUg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzI7MjQxMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c, n" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <output expression="&quot;enter your value&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="n&gt;0">
+                <assign variable="n" expression="n/10"/>
+                <assign variable="c" expression="c+1"/>
+            </while>
+            <output expression="&quot;no.of digits are   &quot;&amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

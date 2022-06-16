@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-27 06:25:44 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDc6NDY6NTkgUE07IDI5NDY="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDg6MTk6NTkgUE07IDI5NDc="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yNzswNjoyNTo0NCBQTTsxOzMxOTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Checking whether a number is Positive, Zero or Negative"/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter an integer&quot;" newline="True"/>
+            <input variable="N"/>
+            <comment text="Complete the program to input N numbers and check whether each one is Positive (N&gt;0), Zero (N==0) or Negative (N&lt;0) by including necessary blocks"/>
+            <for variable="i" start="N" end="N" direction="inc" step="1">
+                <assign variable="i" expression="i+1"/>
+                <if expression="N=0">
+                    <then>
+                        <output expression="&quot;0&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="N&lt;0">
+                            <then>
+                                <output expression="&quot;-&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;+&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

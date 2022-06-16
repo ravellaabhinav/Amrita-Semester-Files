@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-17 09:53:26 &#2346;&#2370;&#2352;&#2381;&#2357;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTQ7MDM6MDQ6Mjgg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjA5"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTc7MDk6NTM6MjYg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzQ7MjQxMzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, s, x, t" type="Integer" array="False" size=""/>
+            <output expression="&quot;size of arry is &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;enter arry values&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-2" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <output expression="&quot;enter which indices to change&quot;" newline="True"/>
+            <assign variable="i" expression="0"/>
+            <input variable="i"/>
+            <assign variable="t" expression="i"/>
+            <output expression="&quot;enter your value&quot;" newline="True"/>
+            <input variable="x"/>
+            <for variable="i" start="n-1" end="t" direction="dec" step="1">
+                <assign variable="a[i]" expression="a[i-1]"/>
+            </for>
+            <assign variable="a[t]" expression="x"/>
+            <output expression="&quot;after inserting&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-18 02:07:30 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTg7MDE6NTE6MzYg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjEx"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTg7MDI6MDc6MzAg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;give positive number&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="i&lt;n">
+                <assign variable="i" expression="i+1"/>
+                <if expression="n%i==0">
+                    <then>
+                        <assign variable="c" expression="c+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <if expression="c==2">
+                <then>
+                    <output expression="n&amp;&quot;  is a prime number&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="n&amp;&quot;  is a not prime number&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

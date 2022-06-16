@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-09 11:26:17 AM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC1SMDZENkVFOzIwMTktMDgtMDk7MTE6MTI6MTQgQU07Mjc4NA=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC1SMDZENkVFOzIwMTktMDgtMDk7MTE6MjY6MTcgQU07MTsyOTAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, f, e, p, c, ex, l, in" type="Real" array="False" size=""/>
+            <output expression="&quot;income=1100&quot;" newline="True"/>
+            <output expression="&quot;rent=500,  food=300,   electricity=40,  phone=60,     cabel tv=30&quot;" newline="True"/>
+            <assign variable="in" expression="1100"/>
+            <assign variable="r" expression="500"/>
+            <assign variable="f" expression="300"/>
+            <assign variable="e" expression="40"/>
+            <assign variable="p" expression="60"/>
+            <assign variable="c" expression="30"/>
+            <assign variable="ex" expression="r+f+e+p+c"/>
+            <assign variable="l" expression="in-ex"/>
+            <output expression="&quot;monthly expenses=&quot;&amp;ex" newline="True"/>
+            <output expression="&quot;left over money=&quot;&amp;l" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

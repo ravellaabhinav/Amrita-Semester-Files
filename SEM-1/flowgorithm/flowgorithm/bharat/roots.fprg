@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-27 08:36:42 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMjc7MDg6MTg6NDYg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjIy"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMjc7MDg6MzY6NDIg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p, b, a, x, y, t, d, c" type="Real" array="False" size=""/>
+            <output expression="&quot;enter a,b,c&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="d" expression="b^2-4*a*c"/>
+            <if expression="d&gt;=0">
+                <then>
+                    <assign variable="p" expression="-b/(2*a)"/>
+                    <assign variable="x" expression="p+(sqrt(d)/2*a)"/>
+                    <assign variable="y" expression="p-(sqrt(d)/2*a)"/>
+                    <output expression="x" newline="True"/>
+                    <output expression="y" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="p" expression="-b/(2*a)"/>
+                    <assign variable="t" expression="(sqrt(-d))*1/(2*a)"/>
+                    <output expression="p&amp;&quot;+i&quot;&amp;t" newline="True"/>
+                    <output expression="p&amp;&quot;-i&quot;&amp;t" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

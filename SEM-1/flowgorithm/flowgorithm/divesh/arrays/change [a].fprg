@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-22 03:40:59 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjI7MDM6MTQ6MjAg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjAx"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjI7MDM6NDA6NTkg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="t, p, i, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter no.of values using&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;enter values&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <output expression="&quot;press rotate to right:1/left:2&quot;" newline="True"/>
+            <input variable="p"/>
+            <if expression="p==1">
+                <then>
+                    <assign variable="t" expression="a[0]"/>
+                    <for variable="i" start="0" end="n-2" direction="inc" step="1">
+                        <assign variable="a[i]" expression="a[i+1]"/>
+                    </for>
+                    <assign variable="a[n-1]" expression="t"/>
+                    <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                        <output expression="a[i]" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <assign variable="t" expression="a[n-1]"/>
+                    <for variable="i" start="n-1" end="1" direction="dec" step="1">
+                        <assign variable="a[i]" expression="a[i-1]"/>
+                    </for>
+                    <assign variable="a[0]" expression="t"/>
+                    <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                        <output expression="a[i]" newline="True"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-21 06:53:53 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDg6MDg6MTggUE07IDI5NDA="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDg6MjY6MzkgUE07IDI5NDM="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yMTswNjo1Mzo1MyBQTTsxOzMxODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Printing factorial of a number"/>
+            <comment text="5! = 1x2x3x4x5"/>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="fact" type="Integer" array="False" size=""/>
+            <assign variable="fact" expression="1"/>
+            <output expression="&quot;Enter number&quot;" newline="True"/>
+            <input variable="Number"/>
+            <comment text="Read the number"/>
+            <for variable="i" start="1" end="Number" direction="inc" step="1">
+                <assign variable="fact" expression="fact*i"/>
+                <comment text="Compute the factorial as previous factorial value into i"/>
+            </for>
+            <comment text="Display the factorial"/>
+            <output expression="fact" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

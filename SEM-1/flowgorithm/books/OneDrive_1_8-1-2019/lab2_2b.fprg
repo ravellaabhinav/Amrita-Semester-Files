@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-07-19 03:06:26 PM"/>
+        <attribute name="created" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAyOjU3OjEwIFBNOzE5Njg="/>
+        <attribute name="edited" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAzOjA2OjI2IFBNOzM7MjA4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="input" type="String" array="False" size=""/>
+            <output expression="&quot;Press Any  Key on Your Key Board&quot;" newline="True"/>
+            <input variable="input"/>
+            <output expression="&quot;You have pressed the key :  &quot;  &amp;input" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

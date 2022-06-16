@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-07-19 03:23:12 PM"/>
+        <attribute name="created" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAzOjA3OjQ3IFBNOzE5NzQ="/>
+        <attribute name="edited" value="VVNFUjtBRE1JTjsyMDE5LTA3LTE5OzAzOjIzOjEyIFBNOzE7MjA3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;This script will add two numbers&quot;" newline="True"/>
+            <output expression="&quot;Enetr Two Numbers of Your Choice&quot;" newline="True"/>
+            <declare name="number1" type="Integer" array="False" size=""/>
+            <declare name="number2" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <input variable="number1"/>
+            <input variable="number2"/>
+            <assign variable="sum" expression="number1+number2"/>
+            <output expression="&quot;The sum is : &quot;  &amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

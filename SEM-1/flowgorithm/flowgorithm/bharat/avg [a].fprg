@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-21 11:00:53 &#2346;&#2370;&#2352;&#2381;&#2357;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjE7MTA6MzI6MzAg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzIzOTk4"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjE7MTE6MDA6NTMg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzE7MjQxMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Real" array="False" size=""/>
+            <declare name="i, n, t, s" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="t" expression="0"/>
+            <output expression="&quot;no of students&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;enter totals&quot;" newline="True"/>
+            <while expression="i&lt;n">
+                <input variable="a[i]"/>
+                <assign variable="s" expression="s+a[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="x" expression="s/n"/>
+            <output expression="&quot;avg is  &quot;&amp;x" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="a[i]&lt;x">
+                    <then>
+                        <assign variable="t" expression="t+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="t&gt;2">
+                <then>
+                    <output expression="&quot;danger&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-28 12:27:39 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yODsxMDo1ODoyOCBBTTszMDcz"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yODsxMjoyNzozOSBQTTsxOzMxOTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="result, i" type="Integer" array="False" size=""/>
+            <declare name="pass, fail" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="pass" expression="0"/>
+            <assign variable="fail" expression="0"/>
+            <while expression="i&lt;=10">
+                <output expression="&quot;Enter result (1=pass:2=fail)&quot;" newline="True"/>
+                <input variable="result"/>
+                <if expression="result!=1 &amp;&amp; result!=2">
+                    <then>
+                        <output expression="&quot;Enter valid result&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="i" expression="i+1"/>
+                        <if expression="result==1">
+                            <then>
+                                <assign variable="pass" expression="pass+1"/>
+                            </then>
+                            <else>
+                                <assign variable="fail" expression="fail+1"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <if expression="pass &gt;=8">
+                <then>
+                    <output expression="&quot;Bonus to the instructor&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;No. of students passed :&quot; &amp; pass" newline="True"/>
+            <output expression="&quot;No. of students failed :&quot; &amp; fail" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

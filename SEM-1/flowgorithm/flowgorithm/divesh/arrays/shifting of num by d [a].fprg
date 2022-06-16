@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-30 03:07:42 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMzA7MDI6NDU6NTkg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjE1"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMzA7MDM6MDI6Mzgg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMzA7MDI6MDY6MTMg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzM4NTc1"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMzA7MDM6MDc6NDIg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, t, d, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;number of values using&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;enter values&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <output expression="&quot;no.of places to be shift&quot;" newline="True"/>
+            <input variable="d"/>
+            <for variable="i" start="0" end="d-1" direction="inc" step="1">
+                <assign variable="t" expression="a[0]"/>
+                <for variable="j" start="0" end="n-2" direction="inc" step="1">
+                    <assign variable="a[j]" expression="a[j+1]"/>
+                </for>
+                <assign variable="a[n-1]" expression="t"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

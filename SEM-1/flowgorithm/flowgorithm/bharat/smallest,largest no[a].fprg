@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-17 10:33:49 &#2346;&#2370;&#2352;&#2381;&#2357;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTc7MDk6NTU6MDcg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzI0MDIw"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMTc7MTA6MzM6NDkg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzE7MjQxMjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, m, l" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter no of values are you using&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;enter your values&quot;" newline="True"/>
+            <while expression="i&lt;n">
+                <input variable="a[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="i" expression="0"/>
+            <assign variable="m" expression="a[0]"/>
+            <for variable="i" start="1" end="n-1" direction="inc" step="1">
+                <if expression="a[i]&lt;m">
+                    <then>
+                        <assign variable="m" expression="a[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="l" expression="a[0]"/>
+            <for variable="i" start="1" end="n-1" direction="inc" step="1">
+                <if expression="a[i]&gt;l">
+                    <then>
+                        <assign variable="l" expression="a[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;smallest no is  &quot;&amp;m" newline="True"/>
+            <output expression="&quot;largest no is  &quot;&amp;l" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

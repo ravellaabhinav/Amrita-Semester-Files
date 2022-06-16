@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-18 04:14:17 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDc6NDY6NTkgUE07IDI5NDY="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDg6MjI6NTEgUE07IDI5MzM="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0xODswNDoxNDoxNyBQTTsxOzMxODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Checking the quadrant for a given (x,y) pair.&#13;&#10;x=0 --&gt; Y-axis&#13;&#10;y=0 --&gt; X-axis&#13;&#10;x&gt;0,y&gt;0 --&gt; Quadrant 1&#13;&#10;x&gt;0,y&lt;0 --&gt; Quadrant 2&#13;&#10;x&lt;0,y&lt;0 --&gt; Quadrant 3&#13;&#10;x&lt;0,y&gt;0 --&gt; Quadrant 4"/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="y" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter x-value&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Enter y-value&quot;" newline="True"/>
+            <input variable="y"/>
+            <if expression="x&gt;0&amp;&amp;y&gt;0">
+                <then>
+                    <output expression="&quot;The entered point is in first quadrant&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x&gt;0&amp;&amp;y&lt;0">
+                        <then>
+                            <output expression="&quot;The entered point is in fourth quadrant&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="x&lt;0&amp;&amp;y&gt;0">
+                                <then>
+                                    <output expression="&quot;The entered point is in second quadrant&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;The entered point is in third quadrant&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;have a nice day&quot;" newline="True"/>
+            <comment text="Complete the program to print the quadrant. Try with different values for x and y."/>
+        </body>
+    </function>
+</flowgorithm>

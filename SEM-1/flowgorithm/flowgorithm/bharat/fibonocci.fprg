@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-28 10:19:37 &#2346;&#2370;&#2352;&#2381;&#2357;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMjg7MDk6NDY6MjUg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzI0MDIx"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMjg7MTA6MTk6Mzcg4KSq4KWC4KSw4KWN4KS14KS+4KS54KWN4KSoOzE7MjQxMjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, i, n" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <assign variable="b" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <input variable="n"/>
+            <output expression="&quot;0&quot;" newline="True"/>
+            <while expression="i&lt;=(n+1)">
+                <assign variable="i" expression="i+1"/>
+                <assign variable="a" expression="a+b"/>
+                <output expression="a" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+                <if expression="i&lt;(n+1)">
+                    <then>
+                        <assign variable="i" expression="i+1"/>
+                        <assign variable="b" expression="a+b"/>
+                        <output expression="b" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

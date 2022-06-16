@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-18 03:22:10 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTg7MDI6NTQ6Mjcg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjE1"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTg7MDM6MjI6MTAg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, s, t" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="s" expression="0"/>
+            <output expression="&quot;enter your number&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="t" expression="n"/>
+            <while expression="i&lt;(n-1)">
+                <assign variable="i" expression="i+1"/>
+                <if expression="n%i==0">
+                    <then>
+                        <assign variable="s" expression="s+i"/>
+                        <output expression="s" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <if expression="s==t">
+                <then>
+                    <output expression="t&amp;&quot; is a perfect number&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="t&amp;&quot; is not a perfect number&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

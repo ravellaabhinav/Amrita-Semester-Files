@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-14 04:15:55 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTQ7MDM6NTI6NTEg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjA3"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTQ7MDQ6MTU6NTUg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Real" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;enter your number&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="do while"/>
+            <do expression="i&lt;=n">
+                <output expression="i" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </do>
+            <comment text="while"/>
+            <while expression="i&lt;=n">
+                <output expression="i" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

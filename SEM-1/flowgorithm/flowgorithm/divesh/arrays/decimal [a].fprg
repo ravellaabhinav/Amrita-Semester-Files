@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-21 07:07:21 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjE7MDY6MTk6NDYg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjE2"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDktMjE7MDc6MDc6MjEg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzU7MTkzMTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, s, r, t, k" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter value&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="t" expression="n"/>
+            <assign variable="k" expression="0"/>
+            <while expression="n&gt;0">
+                <assign variable="n" expression="n/2"/>
+                <assign variable="k" expression="k+1"/>
+            </while>
+            <assign variable="n" expression="t"/>
+            <declare name="a" type="Integer" array="True" size="k"/>
+            <assign variable="i" expression="0"/>
+            <while expression="n&gt;0">
+                <assign variable="r" expression="n%2"/>
+                <assign variable="a[i]" expression="r"/>
+                <assign variable="n" expression="n/2"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="n" expression="t"/>
+            <for variable="i" start="k-1" end="0" direction="dec" step="1">
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-18 08:00:49 &#2309;&#2346;&#2352;&#2366;&#2361;&#2381;&#2344;"/>
+        <attribute name="created" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTg7MDc6NTU6MjAg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE5MjE0"/>
+        <attribute name="edited" value="YmhhcmE7REVTS1RPUC1GVFFHQktQOzIwMTktMDgtMTg7MDg6MDA6NDkg4KSF4KSq4KSw4KS+4KS54KWN4KSoOzE7MTkzMjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, s, i, n" type="Integer" array="False" size=""/>
+            <assign variable="s" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;give your number&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="n&gt;0">
+                <assign variable="r" expression="n%10"/>
+                <assign variable="s" expression="s+r"/>
+                <assign variable="i" expression="i+1"/>
+                <assign variable="n" expression="n/10"/>
+            </while>
+            <output expression="&quot;sum of number digits is  &quot;&amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

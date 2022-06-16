@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+    int p1,p2,p3,p4,p5,rp1,rp2,rp3,rp4,rp5,q1,q2,q3,q4,q5;
+    scanf("%d %d %d %d %d",&q1,&q2,&q3,&q4,&q5);
+    p1=1122;
+    p2=2211;
+    p3=2121;
+    p4=1212;
+    p5=2112;
+    rp1=149;
+    rp2=225;
+    rp3=499.5;
+    rp4=224.5;
+    rp5=343.5;
+    printf("product number\t quantity\t unit price\t amount\n");
+    printf("%d\t %d\t %d\t %d\n",p1,q1,rp1,q1*rp1);
+    printf("%d\t %d\t %d\t %d\n",p2,q2,rp2,q2*rp2);
+    printf("%d\t %d\t %d\t %d\n",p3,q3,rp3,q3*rp3);
+    printf("%d\t %d\t %d\t %d\n",p4,q4,rp4,q4*rp4);
+    printf("%d\t %d\t %d\t %d\n",p5,q5,rp5,q5*rp5);
+
+
+
+    return 0;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shantan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-22 03:58:59 PM"/>
+        <attribute name="created" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yMjswMzowMToyMCBQTTszMDY0"/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yMjswMzo1ODo1OSBQTTsxOzMxOTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="percentage" type="Integer" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="months" type="String" array="False" size=""/>
+            <declare name="effectiveness" type="Real" array="False" size=""/>
+            <assign variable="effectiveness" expression="100"/>
+            <output expression="&quot;Enter the name of the drug&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter percentage&quot;" newline="True"/>
+            <input variable="percentage"/>
+            <while expression="">
+                <assign variable="effectiveness" expression="(&quot;&amp;percentage&quot;/&quot;&amp;effectiveness&quot;)*100"/>
+                <if expression="effectiveness &gt; 50">
+                    <then>
+                        <output expression="&quot;the drug can be stored for &quot;&amp; months" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;The drug is expired&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

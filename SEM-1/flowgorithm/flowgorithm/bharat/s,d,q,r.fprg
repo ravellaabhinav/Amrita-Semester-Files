@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-09 08:59:35 AM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC1SMDZENkVFOzIwMTktMDgtMDg7MDc6MTA6MTYgUE07MjgwMw=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC1SMDZENkVFOzIwMTktMDgtMDk7MDg6NTk6MzUgQU07MjsyOTEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, s, p, d, r, q" type="Real" array="False" size=""/>
+            <output expression="&quot;enter your values&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="s" expression="a+b"/>
+            <assign variable="p" expression="a*b"/>
+            <assign variable="d" expression="a-b"/>
+            <assign variable="q" expression="a%b"/>
+            <assign variable="r" expression="a/b"/>
+            <output expression="&quot;their sum =&quot;&amp;s&amp;&#13;&#10;&quot;,product=&quot;&amp;p&amp;&#13;&#10;&quot;,difference=&quot;&amp;d&amp;&#13;&#10;&quot;,quotient=&quot;&amp;q&amp;&#13;&#10;&quot;,remainder=&quot;&amp;r" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

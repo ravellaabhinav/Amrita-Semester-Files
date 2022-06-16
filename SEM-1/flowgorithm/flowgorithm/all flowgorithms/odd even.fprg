@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dhanya M D"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-21 03:48:05 PM"/>
+        <attribute name="created" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDc6NDY6NTkgUE07IDI5NDY="/>
+        <attribute name="edited" value="RGhhbnlhIE0gRDsgVFJZQU1CQUtBTTsgMjAxOS0wOC0wNDsgMDc6NTI6MzYgUE07IDI5Mzg="/>
+        <attribute name="edited" value="U2hhbnRhbjtMQVBUT1AtNFFPREM5Vko7MjAxOS0wOC0yMTswMzo0ODowNSBQTTsxOzMxODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Checking whether a number is odd or even"/>
+            <comment text="When an even integer is divided by 2, remainder is zero. The operator used to find the remainder is called mod. If N mod 2 is zero, N is even; otherwise, N is odd"/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter an integer&quot;" newline="True"/>
+            <input variable="N"/>
+            <if expression="N mod 2 == 0">
+                <then>
+                    <output expression="N &amp; &quot; is Even&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="N &amp; &quot; is Odd&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

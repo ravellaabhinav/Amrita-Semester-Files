@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RAVELLA ABHINAV"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-13 08:47:44 PM"/>
+        <attribute name="created" value="UkFWRUxMQSBBQkhJTkFWO0FCSEk7MjAxOS0xMC0xMzswODo0NDo0NyBQTTsyNjIw"/>
+        <attribute name="edited" value="UkFWRUxMQSBBQkhJTkFWO0FCSEk7MjAxOS0xMC0xMzswODo0Nzo0NCBQTTsxOzI3Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter text&quot;" newline="True"/>
+            <input variable="name"/>
+            <for variable="n" start="0" end="len(name)-1" direction="inc" step="1">
+                <output expression="char(name,n)" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
