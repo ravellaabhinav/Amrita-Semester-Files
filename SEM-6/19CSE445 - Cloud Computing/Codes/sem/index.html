@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-top: 0.83em;
+            margin-bottom: 0.83em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            font-family: Arial;
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1.5px solid black;
+            resize: vertical;
+        }
+        input[type=email], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1.5px solid black;
+            resize: vertical;
+        }
+        input[type=link], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid black;
+            resize: vertical;
+        }
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+            color: blue;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        input[type=submit] {
+            background-color: darkgray;
+            color: black;
+            padding: 12px 20px;
+            border: 1px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        .container {
+            border-radius: 0px;
+            background-color: white;
+            border: 2px solid black;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 0%;
+            border-top: white;
+        }
+        .header{
+            border-radius: 0px;
+            background-color: white;
+            border: 2px solid black;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 0%;
+        }
+        #box1 {
+            padding: 10px;
+            height: 40px;
+            line-height: 30px;
+            background-color: rgb(48,154,252);
+        }
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        .row {
+            padding: 0px 20px;
+        }
+        #btn.row{
+            padding-top: 10px;
+            padding-right: 200px;
+            padding-bottom: 10px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h1 span {
+            background: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div id="box1">
+        <h1></h1>
+    </div>
+</div>
+<div class="container">
+    <form action="http://localhost:9001/" method="GET">
+
+        <div class="row">
+            <div class="col-25">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="fname" placeholder="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="email" name="email" placeholder="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="link">Web Address</label>
+            </div>
+            <div class="col-75">
+                <input type="link" id="link" name="link" placeholder="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="subject">Comments</label>
+            </div>
+            <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="" style="height:100px"></textarea>
+            </div>
+        </div>
+        <div id="btn" class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>

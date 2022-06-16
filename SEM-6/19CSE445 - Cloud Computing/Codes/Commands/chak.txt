@@ -1,0 +1,84 @@
+Cloud cheat sheet
+SQL,VM and bucket in three tabs
+
+SQL -
+create public 0.0.0.0/0
+
+Firewall rule-
+[Image 30.jpg]
+VM -
+Os Ubuntu
+Create
+
+Workbench -
+Create a workbench using vm ip address
+Test connection and ok
+
+Create bucket -
+All default and create
+Add principlas - allusers , cloud storage viewer
+
+Vs code-
+Add js code change host ip
+
+Workbench -
+[Image 33.jpg]
+
+
+
+Iam gcp-
+Service account 
+Compute engine
+Create key
+Download key and add the key name in the js code
+
+Vs code -
+Npm init
+[Image 32.jpg]
+
+IMPORTANT
+ for storing images, bucket name should be added not the bucket which we created first
+
+Open ssh of vm-
+Upload ev2 , package.lock and package file 
+Sudo apt-get update
+Sudo apt install nodejs
+Sudo apt install npm
+
+Vs code-
+Copy external IP and change in index.html
+
+Bucket-
+Upload index.html in bucket
+Make it public
+
+Ssh-
+Npm install express mysql zipcodes @google-cloud/storage multer 
+Node ev2.js
+
+If not working then run in vs code
+And change the ip address in local host to http:/localhost:8083/...
+And paste the address in browser
+
+
+Docker-
+Create docker folder in cloud folder where codes are there
+And create a file in vs code with docker extension
+And paste this code
+[Image 34.jpg]
+
+Paste ev2.j and 2 package file And key file to docker file.
+Change the adress in dockercode 
+Now open cmd for that docket file and paste the code
+[Image 35.jpg]
+
+
+Next command docker run sample
+It creates bucket
+
+
+Push to docker-
+Create repo in docker
+Docker login
+Docker tag username/sample
+Docker push username/sample

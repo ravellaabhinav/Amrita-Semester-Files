@@ -1,0 +1,53 @@
+MY SQL:
+RANDOM NAME
+password
+connections -- name
+network 0.0.0.0/0
+Then create instance
+
+
+SQL WORK BENCH:
+copy paste host name
+
+create database SampleDB;
+use SampleDB;
+create table users(hno varchar(10),hname varchar(25),zipcode varchar(10),city varchar(20));
+select * from users;
+
+
+
+In vs code:
+change port numbers for no errors
+change portnames
+"http://localhost:8089" 
+to check sql connected
+
+
+  node server.js
+->npm install zipcodes
+
+
+Docker Commands:
+
+docker login
+docker build -t image .(to build)
+docker image ls
+docker tag image balaram2727/image1
+docker push balaram2727/image1
+
+->see the updated image in docker
+
+
+gcp:
+create vm instance
+open ssh
+
+commands:
+sudo apt update
+sudo apt install docker.io
+sudo docker pull balaram2727/balu3
+sudo docker image ls
+sudo docker run -p 8089:8089 balaram2727/balu3
+
+--> copy paste ssh id in form action in html and run in default browser
+--> run select * from users to see the values in database

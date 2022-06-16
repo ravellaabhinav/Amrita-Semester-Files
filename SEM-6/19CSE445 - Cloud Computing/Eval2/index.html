@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-top: 0.83em;
+            margin-bottom: 0.83em;
+            padding: 5px;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            font-family: Arial;
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1.5px solid black;
+            resize: vertical;
+        }
+        input[type=email], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1.5px solid black;
+            resize: vertical;
+        }
+        input[type=link], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid black;
+            resize: vertical;
+        }
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+            color: blue;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        input[type=submit] {
+            background-color: blue;
+            color: white;
+            padding: 12px 20px;
+            border: 1px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        .container {
+            border-radius: 0px;
+            background-color: white;
+            border: 2px solid black;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 0%;
+            border-top: white;
+        }
+        .header{
+            border-radius: 0px;
+            background-color: white;
+            border: 2px solid black;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 0%;
+        }
+        #box1 {
+            padding: 10px;
+            height: 40px;
+            line-height: 30px;
+            background-color: rgb(48,154,252);
+        }
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        .row {
+            padding: 0px 20px;
+        }
+        #btn.row{
+            padding-top: 10px;
+            padding-right: 200px;
+            padding-bottom: 10px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h1 span {
+            background: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+            <h2>House Details</h2>
+        </div>
+    </div>
+<div class="container">
+    <form action="http://localhost:8081/" method="post">
+    <!--<form action="https://us-central1-cloud-computing-341208.cloudfunctions.net/function-1" method="post">-->    
+        <div class="row">
+            <div class="col-25">
+                <label for="number">House No</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="number" name="number" placeholder="">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-25">
+                <label for="name">House Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="name" name="name" placeholder="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="code">ZipCode</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="code" name="code" placeholder="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="code">House Photo</label>
+            </div>
+            <div class="col-75">
+                <input type="file" id="pic" name="pic" placeholder="">
+            </div>
+        </div>
+        <div id="btn" class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>

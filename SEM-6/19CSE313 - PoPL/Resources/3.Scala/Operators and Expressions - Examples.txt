@@ -1,0 +1,112 @@
+scala> 1.2 + 2.3
+res6: Double = 3.5
+scala> 3 - 1
+res7: Int = 2
+scala> 'b' - 'a'
+res8: Int = 1
+scala> 2L * 3L
+res9: Long = 6
+scala> 11 / 4
+res10: Int = 2
+scala> 11 % 4
+res11: Int = 3
+scala> 11.0f / 4.0f
+res12: Float = 2.75
+scala> 11.0 % 4.0
+res13: Double = 3.0
+
+
+Unary operators:
+scala> val neg = 1 + -3
+neg: Int = -2
+scala> val y = +3
+y: Int = 3
+scala> -neg
+res15: Int = 2
+
+Relational Operators:
+scala> 1 > 2
+res16: Boolean = false
+scala> 1 < 2
+res17: Boolean = true
+scala> 1.0 <= 1.0
+res18: Boolean = true
+scala> 3.5f >= 3.6f
+res19: Boolean = false
+scala> 'a' >= 'A'
+res20: Boolean = true
+scala> val untrue = !true
+untrue: Boolean = false
+
+Logical Operators:
+scala> val toBe = true
+toBe: Boolean = true
+scala> val question = toBe || !toBe
+question: Boolean = true
+scala> val paradox = toBe && !toBe
+paradox: Boolean = false
+
+scala> def salt() = { println("salt"); false }
+salt: ()Boolean
+scala> def pepper() = { println("pepper"); true }
+pepper: ()Boolean
+scala> pepper() && salt()
+pepper
+salt
+res21: Boolean = false
+scala> salt() && pepper()
+salt
+res22: Boolean = false
+
+scala> salt() & pepper()
+salt
+pepper
+res23: Boolean = false
+
+Bitwise Operators:
+scala> 1 & 2
+res24: Int = 0
+1 & 2, bitwise-ands each bit in 1 (0001) and 2 (0010), which yields 0 (0000).
+scala> 1 | 2
+res25: Int = 3
+scala> 1 ^ 3
+res26: Int = 2
+bitwise-xors each bit in 1 (0001) and 3 (0011), yielding 2 (0010).
+scala> ~1
+res27: Int = -2
+~1, inverts each bit in 1 (0001), yielding -2, which in binary looks like 11111111111111111111111111111110.
+
+Shift operators:
+scala> -1 >> 31     //-1 in binary is 11111111111111111111111111111111
+res28: Int = -1   -1 >> 31, -1 is shifted to the right 31 bit positions   
+scala> -1 >>> 31
+res29: Int = 1
+
+the leftmost bit is again shifted right until it is in the rightmost position,
+but this time filling with zeroes along the way. Thus the result this time is binary
+00000000000000000000000000000001
+
+scala> 1 << 2
+res30: Int = 4
+
+Object Equality:
+scala> 1 == 2
+res31: Boolean = false
+scala> 1 != 2
+res32: Boolean = true
+scala> 2 == 2
+res33: Boolean = true
+scala> List(1, 2, 3) == List(1, 2, 3)
+res34: Boolean = true
+scala> List(1, 2, 3) == List(4, 5, 6)
+res35: Boolean = false
+scala> 1 == 1.0
+res36: Boolean = true
+scala> List(1, 2, 3) == "hello"
+res37: Boolean = false
+scala> List(1, 2, 3) == null
+res38: Boolean = false
+scala> null == List(1, 2, 3)
+res39: Boolean = false
+scala> ("he" + "llo") == "hello"
+res40: Boolean = true

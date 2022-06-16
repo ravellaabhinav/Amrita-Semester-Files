@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html lang="en">  
+    <head>
+        <title>Abhinav</title>
+        <link href="style.css" rel="stylesheet">
+      </head>    
+<body>  
+    
+<div class="container"><br>
+        <form action="#" onsubmit="return create_account()" method="post"> 
+            <h1>ADD NEW EMPLOYEE</h1> 
+            <table>  
+            <tr>  
+                <td class="tdLabel"><label for="number" class="label">Employee Id</label></td>  
+                <td class="d1"><input type="number" name="id" value="" id="id"/></td> 
+            </tr>  
+            <tr>  
+                <td class="tdLabel"><label for="text" class="label">Employee Name</label></td>  
+                <td><input type="text" name="name" id="name"/></td>  
+            </tr>  
+            <tr>  
+                <td class="tdLabel"><label for="register_email" class="label">Qualification</label></td>  
+                <td class="d1"><input type="text" name="qual" value="" id="qual"/></td>  
+            </tr>  
+             
+            <tr>  
+                <td class="tdLabel"><label for="register_country" class="label">Designation</label></td>  
+                <td><select name="country" id="des">  
+                <option value="india">SalesBoy</option>  
+                <option value="pakistan">Marketing</option>  
+                <option value="africa">Accountant</option>  
+                <option value="china">Audit</option>  
+                <option value="other">other</option>  
+            </select>  
+            </td>  
+            </tr>  
+            <tr>  
+                <td class="tdLabel"><label for="register_name" class="label">Salary</label></td>  
+                <td><input type="number" name="number" value="" id="sal"/></td>  
+            </tr>
+            <tr>  
+                <td colspan="2"><div align="center"><input type="submit" id="submit" value="AddRecord"
+                     class="btn btn-success" 	autocomplete="off" onClick="create_account()"/>  
+            </div></td>
+            <td colspan="2"><div align="left"><input type="reset" id="reset" value="Exit"/>
+            </tr>  
+            
+            </table>  
+            </form> 
+        <br><br>
+</div>
+    <script src="main.js"></script>
+
+</body>
+</html> 

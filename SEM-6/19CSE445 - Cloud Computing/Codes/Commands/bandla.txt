@@ -1,0 +1,112 @@
+[7:16 am, 13/05/2022] Abhi: MY SQL:
+RANDOM NAME
+password
+connections -- name
+network 0.0.0.0/0
+Then create instance
+
+
+SQL WORK BENCH:
+copy paste host name
+
+create database SampleDB;
+use SampleDB;
+create table users(hno varchar(10),hname varchar(25),zipcode varchar(10),city varchar(20));
+select * from users;
+
+In vs code:
+change port numbers for no errors
+change portnames
+"http://localhost:8089" 
+to check sql connected
+
+
+  node server.js
+->npm install zipcodes
+
+
+Docker Commands:
+
+docker login
+docker build -t image .(to build)
+docker image ls
+docker tag image balaram2727/image1
+docker push balaram2727/image1
+
+->see the updated image in docker
+
+
+gcp:
+create vm instance
+open ssh
+
+commands:
+sudo apt update
+sudo apt install docker.io
+sudo docker pull balaram2727/balu3
+sudo docker image ls
+sudo docker run -p 8089:8089 balaram2727/balu3
+
+--> copy paste ssh id in form action in html and run in default browser
+--> run select * from users to see the values in database
+[7:18 am, 13/05/2022] Abhi: Docker Basic Commands
+---------------------
+1) docker --version
+
+2) docker run hello-world
+
+3) docker image ls
+
+4) docker container ls --all
+
+
+###################
+
+
+2) docker build . -t bharathtest 
+
+3) docker run 166e79d03ca9 (Or) docker run mytestimage (or) docker run -p 8899:8899 bharathtest 
+
+
+
+push to docker-hub
+-------------------
+
+Login & enter username and password
+
+1) docker login
+
+2) docker tag bharathtest jack/bharathtestsample
+
+3) docker push jack/bharathtestsample
+
+4) docker pull jack/bharathtestsample
+
+
+Run nodeJS application
+----------------------
+docker run -p 8833:8833  mynodeimage
+
+
+
+
+
+
+
+
+--------------------------------
+In GCP
+---------------------------------
+sudo apt update
+sudo apt install docker.io
+sudo docker version
+sudo docker run -p 8899:8899 jack/bharathtestsample 
+
+api : 
+http://External_IP:9090/?username=bharath&password=32334d
+
+meaning of above command
+docker run = create the container
+p = publish, containerport/imageport 8899 to the hostport/vmport 9090
+d = detached mode or run in background
+jack/bharathtestsample = image name present in docker hub

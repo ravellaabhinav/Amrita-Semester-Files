@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@azure/arm-compute": "^17.2.0",
+    "@azure/identity": "^2.0.4",
+    "@azure/storage-blob": "^12.8.0"
+  }
+}

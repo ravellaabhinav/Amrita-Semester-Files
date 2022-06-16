@@ -1,0 +1,73 @@
+Docker Basic Commands
+---------------------
+1) docker --version
+
+2) docker run hello-world
+
+3) docker image ls
+
+4) docker container ls --all
+
+
+Docker running first sample
+---------------------------
+0) docker login
+
+1) vim Dockerfile
+
+	FROM alpine
+
+	CMD ["echo","This is my first Program"]
+
+2) docker build . -t mytestimage (Or) docker build - < Dockerfile (Or) docker build -t mytestimage - < Dockerfile 
+
+3) docker run 166e79d03ca9 (Or) docker run mytestimage
+
+4) docker container rm 6b3f5a2be8ef
+
+5) docker image rm -f mytestimage
+
+6) docker system prune (To remove all unused resources)
+
+7) docker rmi $(docker images -a -q) (To delete all images)
+
+Docker running first java sample
+--------------------------------
+1) edit a simple Java program
+2) copy following lines to Dockerfile
+
+	FROM java:7
+	COPY sample.java /usr/src/myapp/sample.java 
+	WORKDIR /usr/src/myapp
+	RUN javac sample.java
+	CMD ["java","sample"]
+
+Commands
+1) docker build . -t mytestimage
+
+2) docker run --name mytestimage1 mytestimage
+
+One liner to stop / remove all of Docker containers:
+
+3) docker stop $(docker ps -a -q)
+
+4) docker rm $(docker ps -a -q)
+
+
+push to docker-hub
+-------------------
+
+Login & enter username and password
+
+1) docker login
+
+2) docker tag mynodesample rameshgowtham/mynodesample
+
+3) docker push rameshgowtham/mynodesample
+
+4) docker pull rameshgowtham/mytestimage
+
+
+Run nodeJS application
+----------------------
+docker run -p 8833:8833  mynodeimage
