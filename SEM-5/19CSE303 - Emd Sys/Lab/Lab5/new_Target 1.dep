@@ -1,0 +1,2 @@
+Dependencies for Project 'new', Target 'Target 1': (DO NOT MODIFY !)
+F (.\new1209.s)(0x613DB308)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\new1209.lst --xref -o .\new1209.o --depend .\new1209.d)

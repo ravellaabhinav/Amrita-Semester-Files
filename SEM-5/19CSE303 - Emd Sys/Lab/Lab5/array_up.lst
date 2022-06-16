@@ -1,0 +1,102 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;Array example by AKS
+    2 00000000         ;There is an  array of 32 bit constants
+    3 00000000         ;array[6] = 1,2,3,4,5,6
+    4 00000000         ;run this code and observe r3, r2 and r1
+    5 00000000         ;traversing the array starting from the beginning array[
+                       0]. array[1], array[2]...array[5]
+    6 00000000                 AREA             array_traverse_up, CODE, READON
+LY 
+                                                            ;traversing the arr
+                                                            ay starting from th
+                                                            e beginning array[0
+                                                            ]. array[1], array[
+                                                            2]...array[5]
+    7 00000000                 ENTRY
+    8 00000000 E28F2018        adr              r2, array   ;get the base adres
+                                                            s of the array in r
+                                                            2, ie, adress of th
+                                                            e first element in 
+                                                            the array
+    9 00000004 E3A01000        mov              r1, #0      ;r1 serves as the i
+                                                            ndex into the array
+                                                             range of values: 0
+                                                             to 5
+   10 00000008 E3510006 
+                       loop    cmp              r1,#6       ;we are done if r1>
+                                                            =6
+   11 0000000C AA000002        bge              done        ;done
+   12 00000010 E7923101        ldr              r3, [r2, r1,LSL #2] ;load the a
+                                                            rray element to r3,
+                                                             this requires comp
+                                                            uting the adress of
+                                                             each elemnt
+   13 00000014 E2911001        adds             r1, r1 ,#1  ;increment the inde
+                                                            x by one
+   14 00000018 EAFFFFFA        b                loop        ;repeat as long as 
+                                                            r1<=5
+   15 0000001C EAFFFFFE 
+                       done    b                done        ;terminate in forev
+                                                            er loop
+   16 00000020                 align                        ;required for align
+                                                            ing the words at co
+                                                            rrect boundaries in
+                                                             memory
+   17 00000020 00000001 
+              00000002 
+              00000003 
+              00000004 
+              00000005 
+              00000006 array   dcd              1,2,3,4,5,6 ;declaration of the
+                                                             array of words wit
+                                                            h 6 element
+   18 00000038                 end
+Command Line: --debug --xref --apcs=interwork --depend=.\array_up.d -o.\array_u
+p.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\Philip
+s --predefine="__EVAL SETA 1" --list=.\array_up.lst array_up.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+array 00000020
+
+Symbol: array
+   Definitions
+      At line 17 in file array_up.s
+   Uses
+      At line 8 in file array_up.s
+Comment: array used once
+array_traverse_up 00000000
+
+Symbol: array_traverse_up
+   Definitions
+      At line 6 in file array_up.s
+   Uses
+      None
+Comment: array_traverse_up unused
+done 0000001C
+
+Symbol: done
+   Definitions
+      At line 15 in file array_up.s
+   Uses
+      At line 11 in file array_up.s
+      At line 15 in file array_up.s
+
+loop 00000008
+
+Symbol: loop
+   Definitions
+      At line 10 in file array_up.s
+   Uses
+      At line 14 in file array_up.s
+Comment: loop used once
+4 symbols
+335 symbols in table

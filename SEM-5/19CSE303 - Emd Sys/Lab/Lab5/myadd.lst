@@ -1,0 +1,33 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             myadd, CODE, READONLY
+    2 00000000                 ENTRY
+    3 00000000 E3A00001        mov              r0, #1
+    4 00000004 E3A01002        mov              r1, #2
+    5 00000008 E0802001        add              r2, r0, r1
+    6 0000000C E2811001        add              r1,r1,#1
+    7 00000010 EF000011        swi              &11
+    8 00000014                 end
+Command Line: --debug --xref --apcs=interwork --depend=.\myadd.d -o.\myadd.o -I
+C:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\Philips --pr
+edefine="__EVAL SETA 1" --list=.\myadd.lst myadd.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+myadd 00000000
+
+Symbol: myadd
+   Definitions
+      At line 1 in file myadd.s
+   Uses
+      None
+Comment: myadd unused
+1 symbol
+332 symbols in table

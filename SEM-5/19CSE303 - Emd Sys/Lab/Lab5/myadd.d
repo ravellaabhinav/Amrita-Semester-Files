@@ -1,0 +1,1 @@
+.\myadd.o: myadd.s

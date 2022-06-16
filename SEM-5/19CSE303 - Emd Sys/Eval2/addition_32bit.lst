@@ -1,0 +1,56 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             ADDITION32bit, CODE, READONLY ;
+                                                            
+    2 00000000                 ENTRY
+    3 00000000         START
+    4 00000000 E3A07101        MOV              R7, #0x40000000
+    5 00000004 E5971000        LDR              R1, [R7]
+    6 00000008 E2877004        ADD              R7, R7, #4
+    7 0000000C E5972000        LDR              R2, [R7]
+    8 00000010 E0814002        ADD              R4, R1, R2
+    9 00000014 E3A07171        MOV              R7, #0X4000001C
+   10 00000018 E5874000        STR              R4, [R7]
+   11 0000001C EAFFFFFE 
+                       STOP    B                STOP
+   12 00000020                 END
+Command Line: --debug --xref --apcs=interwork --depend=.\addition_32bit.d -o.\a
+ddition_32bit.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\AR
+M\Inc\Philips --predefine="__EVAL SETA 1" --list=.\addition_32bit.lst addition_
+32bit.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+ADDITION32bit 00000000
+
+Symbol: ADDITION32bit
+   Definitions
+      At line 1 in file addition_32bit.asm
+   Uses
+      None
+Comment: ADDITION32bit unused
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 3 in file addition_32bit.asm
+   Uses
+      None
+Comment: START unused
+STOP 0000001C
+
+Symbol: STOP
+   Definitions
+      At line 11 in file addition_32bit.asm
+   Uses
+      At line 11 in file addition_32bit.asm
+Comment: STOP used once
+3 symbols
+334 symbols in table

@@ -1,0 +1,34 @@
+Complete the following:
+
+Refer the array based programs shared in the last lab.
+1. Declare an array of 10 words in memory.
+   Add 1 to all elements.
+2.  Declare an array of 10 words in memory.
+  Subtract 1 from all elements.
+3. Count the number of odd elements in an array
+4. Count the number of even elements in an array.
+(ckeck the LSB of the number for odd/even test).
+
+5. Try the programs available in the pdf attached.
+6. Study hoe logical instructions are functioning:
+    https://www.tutorialspoint.com/assembly_programming/assembly_logical_instructions.htm
+
+7. Go through the examples in the slides.
+
+Submission:
+-----------------------
+
+Please submit a PDF report of the work done indications the task number and status.
+Also list the instructions that you have studied today.
+
+Attach screen shots for the programs and new instructions studied today.
+
+Example of the report:
+
+Task No:			Status
+-----------			--------------------
+1				Completed.
+Instructions studied:
+BIC, LSL
+TST
+

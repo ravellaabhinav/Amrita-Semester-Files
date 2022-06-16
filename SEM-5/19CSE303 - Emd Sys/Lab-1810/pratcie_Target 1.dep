@@ -1,0 +1,7 @@
+Dependencies for Project 'pratcie', Target 'Target 1': (DO NOT MODIFY !)
+F (.\P2.c)(0x616D371C)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\p2.o --omf_browse .\p2.crf --depend .\p2.d)
+I (C:\Keil\ARM\Inc\Philips\LPC214X.H)(0x532C1500)
+F (.\P1.c)(0x616D3634)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\p1.o --omf_browse .\p1.crf --depend .\p1.d)
+I (C:\Keil\ARM\Inc\Philips\LPC214X.H)(0x532C1500)
+F (..\..\..\Downloads\Switch-Led.c)(0x616D340F)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\switch-led.o --omf_browse .\switch-led.crf --depend .\switch-led.d)
+I (C:\Keil\ARM\Inc\Philips\LPC214X.H)(0x532C1500)

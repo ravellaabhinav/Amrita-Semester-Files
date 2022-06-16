@@ -1,0 +1,7 @@
+Dependencies for Project 'Lab6_Aug23', Target 'Target 1': (DO NOT MODIFY !)
+F (.\q1.asm)(0x61237429)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\q1.lst --xref -o .\q1.o --depend .\q1.d)
+F (.\move16.s)(0x61236755)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\move16.lst --xref -o .\move16.o --depend .\move16.d)
+F (.\simple.s)(0x61236882)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\simple.lst --xref -o .\simple.o --depend .\simple.d)
+F (..\Lab5\array_down.s)(0x611A2892)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\array_down.lst --xref -o .\array_down.o --depend .\array_down.d)
+F (..\Lab5\myadd.s)(0x611A2896)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\myadd.lst --xref -o .\myadd.o --depend .\myadd.d)
+F (..\Lab5\mycode.s)(0x611A289A)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\mycode.lst --xref -o .\mycode.o --depend .\mycode.d)

@@ -1,0 +1,6 @@
+Dependencies for Project 'alp', Target 'Target 1': (DO NOT MODIFY !)
+F (.\alp2.s)(0x613F11C9)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\alp2.lst --xref -o .\alp2.o --depend .\alp2.d)
+F (.\addition_32bit.asm)(0x613F154D)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\addition_32bit.lst --xref -o .\addition_32bit.o --depend .\addition_32bit.d)
+F (.\ADD_64BIT.asm)(0x613F27A5)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\add_64bit.lst --xref -o .\add_64bit.o --depend .\add_64bit.d)
+F (..\..\..\Downloads\Switch-Led.c)(0x616D340F)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\switch-led.o --omf_browse .\switch-led.crf --depend .\switch-led.d)
+I (C:\Keil\ARM\Inc\Philips\LPC214X.H)(0x532C1500)

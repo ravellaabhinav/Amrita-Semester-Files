@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Administrator\Documents\19CSE303 - Emd Sys\Lab\tech\sample.uvproj
+Project File Date:  11/08/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling transmit.c...
+transmit.c(7): error:  #20: identifier "UOLSR" is undefined
+        while(! (UOLSR & 0x20));
+transmit.c(8): error:  #20: identifier "UOTHR" is undefined
+        UOTHR = ch;
+transmit.c(11): warning:  #951-D: return type of function "main" must be "int"
+  void main()
+transmit.c(19): warning:  #69-D: integer conversion resulted in truncation
+        U0DLL=978;
+transmit.c(25): warning:  #1-D: last line of file ends without a newline
+  }
+transmit.c: 3 warnings, 2 errors
+".\sample.axf" - 2 Error(s), 3 Warning(s).
+Target not created
+</pre>
+</body>
+</html>

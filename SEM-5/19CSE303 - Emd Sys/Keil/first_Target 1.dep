@@ -1,0 +1,8 @@
+Dependencies for Project 'first', Target 'Target 1': (DO NOT MODIFY !)
+F (.\testing.asm)(0x616D397A)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\testing.lst --xref -o .\testing.o --depend .\testing.d)
+F (.\Switch_Led.c)(0x616D39CD)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\switch_led.o --omf_browse .\switch_led.crf --depend .\switch_led.d)
+I (C:\Keil\ARM\Inc\Philips\LPC214X.H)(0x532C1500)
+F (.\P1.c)(0x616D3F23)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\p1.o --omf_browse .\p1.crf --depend .\p1.d)
+I (C:\Keil\ARM\Inc\Philips\LPC214X.H)(0x532C1500)
+F (.\expla.c)(0x616D40C0)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\expla.o --omf_browse .\expla.crf --depend .\expla.d)
+I (C:\Keil\ARM\Inc\Philips\LPC214X.H)(0x532C1500)

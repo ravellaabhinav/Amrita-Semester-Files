@@ -1,0 +1,8 @@
+--cpu ARM7TDMI
+".\alp2.o"
+".\addition_32bit.o"
+".\add_64bit.o"
+".\switch-led.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\alp.map" -o .\alp.axf

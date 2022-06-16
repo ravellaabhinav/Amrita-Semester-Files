@@ -1,0 +1,2 @@
+Dependencies for Project 'asd1209', Target 'Target 1': (DO NOT MODIFY !)
+F (.\asd1209.s)(0x613DBE45)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\asd1209.lst --xref -o .\asd1209.o --depend .\asd1209.d)

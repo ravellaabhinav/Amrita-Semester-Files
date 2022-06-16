@@ -1,0 +1,6 @@
+Dependencies for Project 'basic', Target 'Target 1': (DO NOT MODIFY !)
+F (.\array_down.s)(0x611A2892)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\array_down.lst --xref -o .\array_down.o --depend .\array_down.d)
+F (.\array_up.s)(0x611A2895)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\array_up.lst --xref -o .\array_up.o --depend .\array_up.d)
+F (.\first.asm)(0x611A2D66)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\first.lst --xref -o .\first.o --depend .\first.d)
+F (.\myadd.s)(0x611A2896)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\myadd.lst --xref -o .\myadd.o --depend .\myadd.d)
+F (.\mycode.s)(0x611A289A)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\mycode.lst --xref -o .\mycode.o --depend .\mycode.d)

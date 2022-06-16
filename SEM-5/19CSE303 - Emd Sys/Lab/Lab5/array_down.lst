@@ -1,0 +1,74 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;Array example by AKS
+    2 00000000         ;There is an  array of 32 bit constants
+    3 00000000         ;array[6] = 1,2,3.4.5.6
+    4 00000000         ;run this code and observe r3, r2 and r1
+    5 00000000         ;traversing the array starting from the end array[5]. ar
+                       ray[4], array[3]...array[0]
+    6 00000000                 AREA             array_traverse_down, CODE, READ
+ONLY
+    7 00000000                 ENTRY
+    8 00000000 E3A01005        mov              r1, #5
+    9 00000004 E28F200C        adr              r2, array
+   10 00000008 E7923101 
+                       loop    ldr              r3, [r2, r1,LSL #2]
+   11 0000000C E2511001        subs             r1, r1 ,#1
+   12 00000010 AAFFFFFC        bge              loop
+   13 00000014 EAFFFFFE 
+                       done    b                done
+   14 00000018                 align
+   15 00000018 00000001 
+              00000002 
+              00000003 
+              00000004 
+              00000005 
+              00000006 array   dcd              1,2,3,4,5,6
+   16 00000030                 end
+Command Line: --debug --xref --apcs=interwork --depend=.\array_down.d -o.\array
+_down.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\Ph
+ilips --predefine="__EVAL SETA 1" --list=.\array_down.lst array_down.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+array 00000018
+
+Symbol: array
+   Definitions
+      At line 15 in file array_down.s
+   Uses
+      At line 9 in file array_down.s
+Comment: array used once
+array_traverse_down 00000000
+
+Symbol: array_traverse_down
+   Definitions
+      At line 6 in file array_down.s
+   Uses
+      None
+Comment: array_traverse_down unused
+done 00000014
+
+Symbol: done
+   Definitions
+      At line 13 in file array_down.s
+   Uses
+      At line 13 in file array_down.s
+Comment: done used once
+loop 00000008
+
+Symbol: loop
+   Definitions
+      At line 10 in file array_down.s
+   Uses
+      At line 12 in file array_down.s
+Comment: loop used once
+4 symbols
+335 symbols in table
