@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note>
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+</note>
+<textbox ref="order/shipTo/street" style="width:xx; height:xx">
+    <caption>Street<caption>
+    <help>Please enter the number and street name</help>
+   </textbox>
+   <textbox ref="order/shipTo/city" style="width:xx; height:xx">
+    <caption>City<caption>
+    <help>Please enter the city</help>
+   </textbox>
+   <textbox ref="order/shipTo/state" style="width:xx; height:xx">
+    <caption>State<caption>
+    <help>Please enter the state</help>
+   </textbox>
+   <textbox ref="order/shipTo/zip" style="width:xx; height:xx">
+    <caption>Zip<caption>
+    <help>Please enter the zip</help>
+   </textbox>
+   <textbox ref="order/shipTo/country" style="width:xx; height:xx">
+    <caption>Country<caption>
+    <help>Please enter the country</help>
+   </textbox>
+   <textbox ref="order/shipTo/phone" style="width:xx; height:xx">
+    <caption>Phone<caption>
+    <help>Please enter the phone</help>
+   </textbox>
+   <textbox ref="order/shipTo/fax" style="width:xx; height:xx">
+    <caption>Fax<caption>
+    <help>Please enter the fax</help>
+   </textbox>
+   <textbox ref="order/shipTo/email" style="width:xx; height:xx">
+    <caption>Email<caption>
+    <help>Please enter the email</help>
+   </textbox>
+   <textbox ref="order/shipTo/contact" style="width:xx; height:xx">
+    <caption>Contact<caption>
+    <help>Please enter the contact</help>
+   </textbox>
+   <textbox ref="order/shipTo/comment" style="width:xx; height:xx">
+    <caption>Comment<caption>
+    <help>Please enter the comment</help>
+   </textbox>
+   <textbox ref="order/shipTo/attn" style="width:xx; height

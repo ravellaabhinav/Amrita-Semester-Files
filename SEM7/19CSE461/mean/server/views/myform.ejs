@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <title>Eval2</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script>
+        var myapp = angular.module('myapp',[])
+        myapp.controller('controll', function ($scope) {
+            $scope.validate_form = function(event){
+                
+                if($scope.name == undefined || $scope.age == undefined || $scope.dat == undefined || $scope.eid == undefined ){
+                    // console.log($scope.name)
+                    document.getElementById("error1").innerHTML="Fields need to be enetered"
+                }
+                else{
+                    // console.log('sdhfbashdf')
+                    document.getElementById("error1").innerHTML=""
+                }
+                if($scope.gender == undefined || !($scope.skill1 == true || $scope.skill2 == true ) || ($scope.cars == undefined)){
+                    document.getElementById("error2").innerHTML="Some Fields need to be Selected"
+                }
+                else{
+                    console.log($scope.skill1, $scope.skill2, $scope.skill3, $scope.skill4)
+                    document.getElementById("error2").innerHTML=""
+                }
+            }
+        })
+    </script>
+</head>
+<body>
+    <h1>19CSE461 - Net Centric Programming</h1>
+    <div ng-app = "myapp" ng-controller = "controll">
+        <p id = "error1"></p>
+        <p id = "error2"></p>
+        <form action = "/subfrm" method = "POST">
+            <label for = "name">Name</label>
+            <input type="text" name="name" id = "name" ng-model = "name" required><br/>
+        <br>    
+            <label for = "eid">EmailId</label>
+            <input type="email" name="email" id = "eid" ng-model = "eid" required><br/>
+        <br>
+        
+            <label for="product">ProductID:</label>
+            <select name="product" id="product" ng-model="product" required>
+            <option value="A">PT001</option>
+            <option value="B">PT002</option>
+            <option value="C">PT003</option>
+            </select><br>
+        <br>
+            <label for="skill3">Category:</label>
+            <select name="category" id="category" ng-model="category" required>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            </select>
+        <br> 
+        <br>
+        <!--
+        <label for = "price">Price</label>
+            <input type="number" name="price" id = "price" ng-model = "price" required><br/>
+        <br>
+
+            <label for = "discount">Discount</label>
+            <input type="number" name="discount" id = "discount" ng-model = "discount" required><br/>
+        <br>
+            <label for = "bonus">Bonus</label>
+            <input type="number" name="bonus" id = "bonus" ng-model = "bonus" required><br/>
+        <br>
+            
+            <label for = "gender">Gender</label>
+            <input type="radio" id = "gender" ng-model = "gender" name = "gender" value = "Male" required> "Male"<br/>
+            <input type="radio" id = "gender" ng-model = "gender" name = "gender" value = "Female" required> "Female"<br/>
+            <label for = "dat">Date</label>
+            <input type = "Date" name = "Date" ng-model = "dat" id = "dat" required><br/>
+        -->    
+        <div class="form-group col-lg-6">
+            <label for="exampleInputText">Price</label>
+            <input type="text" name="totalval" class="form-control" id="totalval" onchange="updateDue()">
+        </div>
+        <br>
+        <div class="form-group col-lg-6">
+            <label for="exampleInputText">Discount</label>
+            <input type="text" name="inideposit" class="form-control" id="inideposit" onchange="updateDue()">
+        </div>
+        <br>
+        <div class="form-group col-lg-6">
+            <label for="exampleInputText">Bonus</label>
+            <input type="text" name="bonus" class="form-control" id="bonus" onchange="updateDue()">
+        </div>
+        <br>
+        <div class="form-group col-lg-6">
+            <label for="exampleInputText">Billable Price:</label>
+            <input type="text" name="remainingval" class="form-control" id="remainingval">
+        </div>	
+        
+        <script type="text/javascript">
+            function updateDue() {
+
+var total = parseInt(document.getElementById("totalval").value);
+var val2 = parseInt(document.getElementById("inideposit").value);
+// to make sure that they are numbers
+if (!total) { total = 0; }
+if (!val2) { val2 = 0; }
+
+var ansD = document.getElementById("remainingval");
+ansD.value = total - val2;
+}
+        </script>    
+           
+        <br>
+
+            <input type = "submit" ng-click = "validate_form()">
+        </form>
+        <p>{{messages}}</p>
+    </div>
+</body>

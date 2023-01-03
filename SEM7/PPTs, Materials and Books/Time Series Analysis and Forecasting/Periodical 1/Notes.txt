@@ -1,0 +1,9 @@
+1. 
+- https://towardsdatascience.com/the-six-types-of-data-analysis-75517ba7ea61
+- 
+
+3c.
+-https://www.jmp.com/en_in/statistics-knowledge-portal/what-is-correlation.html#:~:text=What%20is%20correlation%3F,statement%20about%20cause%20and%20effect.
+
+- https://www.wikihow.com/Calculate-the-Sum-of-Squares-for-Error-(SSE)
+- https://medium.com/analytics-vidhya/5-steps-to-get-an-understanding-on-correlation-auto-correlation-and-partial-auto-correlation-e71f6b4bba81
